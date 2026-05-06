@@ -1,300 +1,258 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Heavy Vehicle Service and Repair in Ballarat | BCSC</title>
-  <meta name="description" content="Reliable heavy vehicle servicing and repairs in Ballarat. 20+ years experience, modern diagnostics, fast turnaround.">
-  <!-- Google Tag Manager -->
-  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-PDXJSH3Z');</script>
-  <!-- End Google Tag Manager -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
-  <style>
-    :root{--brc-green:#45955E;--brc-green-hover:#18191B;--brc-dark:#18191B;--brc-body:#2F3134;--brc-muted:#A0A6A9;--brc-light:#F2F2F3;--brc-white:#FFFFFF;--font-main:'Poppins',sans-serif}
-    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-    html{scroll-behavior:smooth}
-    body{font-family:var(--font-main);font-size:18px;font-weight:400;line-height:1.8;letter-spacing:-.5px;color:var(--brc-body);background:var(--brc-white)}
-    a{color:var(--brc-green);font-weight:500;text-decoration:none}
-    a:hover{text-decoration:underline}
-    h1{color:var(--brc-white);font-weight:600;font-size:clamp(39px,5vw,58px);line-height:1.2;letter-spacing:-1.8px}
-    h2{color:var(--brc-dark);font-weight:600;font-size:clamp(28px,4vw,45px);line-height:1.2;letter-spacing:-1.8px}
-    h3{color:var(--brc-dark);font-weight:600;font-size:24px;line-height:1.2;letter-spacing:-1.3px}
-    .btn{display:inline-block;background:var(--brc-green);color:var(--brc-white);font-family:var(--font-main);font-size:18px;font-weight:600;padding:16px 32px;border:none;border-radius:0;cursor:pointer;text-decoration:none;transition:background .2s;letter-spacing:-.3px}
-    .btn:hover{background:var(--brc-green-hover);text-decoration:none}
-    .btn-secondary{background:transparent;border:2px solid var(--brc-white);color:var(--brc-white)}
-    .btn-secondary:hover{background:var(--brc-white);color:var(--brc-dark)}
-    .container{max-width:1200px;margin:0 auto;padding:0 24px}
-    section{padding:80px 0}
-    .site-header{position:sticky;top:0;z-index:100;background:var(--brc-dark);padding:16px 0}
-    .header-inner{display:flex;align-items:center;justify-content:space-between}
-    .header-logo img{height:52px;width:auto}
-    .header-contact{display:flex;flex-direction:column;align-items:flex-end;gap:2px}
-    .header-contact-item{display:flex;align-items:center;gap:8px;color:var(--brc-white);font-size:14px}
-    .header-contact-item .label{color:var(--brc-muted);font-size:11px;font-weight:600;letter-spacing:1px;text-transform:uppercase}
-    .header-contact-item a{color:var(--brc-white);font-weight:600;font-size:16px}
-    .breadcrumb{background:var(--brc-light);padding:12px 0;font-size:14px;color:var(--brc-muted)}
-    .breadcrumb a{color:var(--brc-green);font-weight:500}
-    .breadcrumb span{color:var(--brc-muted);margin:0 8px}
-    .hero{background:var(--brc-dark);padding:80px 0}
-    .hero-inner{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:start}
-    .hero-left{display:flex;flex-direction:column;gap:24px}
-    .hero-subheading{color:var(--brc-green);font-size:20px;font-weight:600;letter-spacing:-.5px}
-    .hero-body{color:#C8CBCD;font-size:17px;line-height:1.7}
-    .hero-ctas{display:flex;gap:16px;flex-wrap:wrap}
-    .hero-form{background:var(--brc-white);padding:36px}
-    .hero-form h3{margin-bottom:20px;font-size:20px}
-    .form-group{margin-bottom:16px}
-    .form-group label{display:block;font-size:13px;font-weight:600;color:var(--brc-body);margin-bottom:6px;text-transform:uppercase;letter-spacing:.5px}
-    .form-group input,.form-group select,.form-group textarea{width:100%;padding:12px 16px;font-family:var(--font-main);font-size:16px;color:var(--brc-body);background:var(--brc-white);border:1.5px solid #D4D6D8;border-radius:0;outline:none;transition:border-color .2s}
-    .form-group input:focus,.form-group select:focus,.form-group textarea:focus{border-color:var(--brc-green)}
-    .form-group textarea{resize:vertical;min-height:90px}
-    .form-group-row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
-    .form-submit{width:100%;margin-top:8px;font-size:17px;padding:16px}
-    .accreditation{background:var(--brc-white);padding:48px 0}
-    .accreditation-logos{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:32px 48px}
-    .accreditation-logos img{height:60px;width:auto;object-fit:contain;filter:grayscale(20%)}
-    .main-content{background:var(--brc-white)}
-    .main-content h2{margin-bottom:24px}
-    .main-content p{margin-bottom:20px}
-    .main-content ul{list-style:none;margin:0 0 24px;display:flex;flex-direction:column;gap:10px}
-    .main-content ul li{padding-left:24px;position:relative;font-size:17px}
-    .main-content ul li::before{content:"→";color:var(--brc-green);font-weight:600;position:absolute;left:0}
-    .content-sub-h{font-size:28px;font-weight:600;color:var(--brc-dark);letter-spacing:-1px;margin:40px 0 16px}
-    .stats-bar{background:var(--brc-dark);padding:64px 0}
-    .stats-inner{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
-    .stats-left{display:flex;flex-direction:column;gap:16px}
-    .stats-left img.stars{height:32px;width:auto}
-    .stats-main{color:var(--brc-white);font-size:clamp(24px,3vw,34px);font-weight:600;letter-spacing:-1px;line-height:1.2}
-    .stats-sub{color:var(--brc-muted);font-size:16px}
-    .stats-right img{max-width:100%}
-    .how-it-works{background:var(--brc-white)}
-    .how-it-works h2{text-align:center;margin-bottom:48px}
-    .steps-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:32px;margin-bottom:48px}
-    .step{display:flex;flex-direction:column;gap:12px}
-    .step-number{font-size:64px;font-weight:600;color:var(--brc-green);line-height:1;letter-spacing:-3px}
-    .step h3{font-size:20px}
-    .step p{font-size:16px;color:var(--brc-body);line-height:1.6}
-    .how-it-works-cta{text-align:center}
-    .location{background:var(--brc-light)}
-    .location h2{margin-bottom:32px}
-    .location iframe{width:100%;height:400px;border:none;display:block}
-    .cta-form{background:var(--brc-dark);padding:80px 0}
-    .cta-form-inner{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:start}
-    .cta-form-left{display:flex;flex-direction:column;gap:20px}
-    .cta-form-left h2{color:var(--brc-white)}
-    .cta-form-left p{color:#C8CBCD;font-size:17px}
-    .trust-list{list-style:none;display:flex;flex-direction:column;gap:10px}
-    .trust-list li{color:var(--brc-white);font-size:16px;display:flex;align-items:center;gap:10px}
-    .trust-list li::before{content:"✓";color:var(--brc-green);font-weight:700;font-size:18px;flex-shrink:0}
-    .cta-form-right .hero-form{background:var(--brc-white)}
-    .faqs{background:var(--brc-light)}
-    .faqs h2{margin-bottom:40px}
-    .faq-list{display:flex;flex-direction:column;gap:0}
-    .faq-item{border-bottom:1px solid #D4D6D8;padding:24px 0}
-    .faq-item:first-child{border-top:1px solid #D4D6D8}
-    .faq-q{font-size:18px;font-weight:600;color:var(--brc-dark);letter-spacing:-.5px;margin-bottom:10px}
-    .faq-a{font-size:16px;color:var(--brc-body);line-height:1.7}
-    .site-footer{background:var(--brc-dark);padding:64px 0 32px;color:var(--brc-white)}
-    .footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:48px;margin-bottom:48px}
-    .footer-brand{display:flex;flex-direction:column;gap:16px}
-    .footer-brand img{height:48px;width:auto}
-    .footer-brand p{color:#C8CBCD;font-size:15px;line-height:1.7}
-    .footer-socials{display:flex;gap:16px}
-    .footer-socials a{color:var(--brc-muted);font-size:14px;font-weight:500;transition:color .2s}
-    .footer-socials a:hover{color:var(--brc-white);text-decoration:none}
-    .footer-col h4{color:var(--brc-white);font-size:14px;font-weight:600;text-transform:uppercase;letter-spacing:1px;margin-bottom:16px}
-    .footer-col ul{list-style:none;display:flex;flex-direction:column;gap:8px}
-    .footer-col ul li a{color:var(--brc-muted);font-size:14px;font-weight:400;transition:color .2s}
-    .footer-col ul li a:hover{color:var(--brc-white);text-decoration:none}
-    .footer-bottom{border-top:1px solid #2F3134;padding-top:24px;color:var(--brc-muted);font-size:13px}
-    .hero-dark{background:var(--brc-dark);padding:80px 0;text-align:center}
-    .hero-dark h1{margin-bottom:20px}
-    .hero-dark p{color:#C8CBCD;font-size:17px;max-width:600px;margin:0 auto 32px}
-    .prose{background:var(--brc-white);padding:80px 0}
-    .prose-inner{max-width:820px}
-    .prose h2{margin:40px 0 16px;font-size:clamp(22px,3vw,30px)}
-    .prose h3{margin:28px 0 12px;font-size:22px;font-weight:600;color:var(--brc-dark)}
-    .prose p{margin-bottom:16px;font-size:17px}
-    .prose ul{list-style:disc;padding-left:28px;margin-bottom:16px}
-    .prose ul li{font-size:17px;margin-bottom:8px}
-    @media(max-width:900px){.hero-inner{grid-template-columns:1fr;gap:40px}.steps-grid{grid-template-columns:1fr;gap:24px}.stats-inner{grid-template-columns:1fr}.cta-form-inner{grid-template-columns:1fr;gap:40px}.footer-grid{grid-template-columns:1fr 1fr}}
-    @media(max-width:600px){section{padding:56px 0}.form-group-row{grid-template-columns:1fr}.hero-ctas{flex-direction:column}.footer-grid{grid-template-columns:1fr}}</style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Heavy Vehicle Service and Repair in Ballarat</title>
+<meta name="description" content="Reliable truck mechanic services in Ballarat. Diesel, brakes, suspension, cooling and full mechanical support.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-PDXJSH3Z');</script>
+<style>:root{--brc-green:#45955E;--brc-green-hover:#18191B;--brc-dark:#18191B;--brc-body:#2F3134;--brc-muted:#A0A6A9;--brc-light:#F2F2F3;--brc-white:#FFFFFF;--font-main:'Poppins',sans-serif;}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}html{scroll-behavior:smooth;}
+body{font-family:var(--font-main);color:var(--brc-body);font-size:18px;line-height:1.8;letter-spacing:-0.5px;}
+img{max-width:100%;display:block;}a{color:var(--brc-green);font-weight:500;text-decoration:none;}a:hover{text-decoration:underline;}
+h1{font-size:58px;font-weight:600;line-height:1.2;letter-spacing:-1.8px;color:var(--brc-white);}
+h2{font-size:45px;font-weight:600;line-height:1.2;letter-spacing:-1.8px;color:var(--brc-dark);}
+h3{font-size:24px;font-weight:600;letter-spacing:-1.3px;color:var(--brc-dark);}
+.btn{display:inline-block;background:var(--brc-green);color:var(--brc-white);font-family:var(--font-main);font-weight:600;font-size:16px;padding:16px 32px;border:none;border-radius:0;cursor:pointer;text-decoration:none;transition:background 0.2s;}
+.btn:hover{background:var(--brc-green-hover);text-decoration:none;color:var(--brc-white);}
+.btn-full{width:100%;text-align:center;display:block;}.btn-pill{border-radius:999px;padding:10px 22px;font-size:15px;}
+header{position:sticky;top:0;z-index:100;background:var(--brc-dark);box-shadow:0 2px 8px rgba(0,0,0,0.15);}
+.header-inner{max-width:1200px;margin:0 auto;padding:0 24px;height:72px;display:flex;align-items:center;justify-content:space-between;gap:16px;}
+.header-logo img{height:48px;width:auto;}.header-phone{color:var(--brc-white);font-weight:500;font-size:16px;text-decoration:none;}.header-phone:hover{color:var(--brc-green);}
+.breadcrumb{background:var(--brc-white);padding:10px 24px;border-bottom:1px solid #E8EAEB;}
+.breadcrumb-inner{max-width:1200px;margin:0 auto;font-size:13px;color:var(--brc-muted);}
+.breadcrumb-inner a{color:var(--brc-muted);font-weight:400;}.breadcrumb-inner a:hover{color:var(--brc-green);}
+.hero{background:var(--brc-dark);padding:80px 24px;}
+.hero-inner{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;}
+.hero-left h1{margin-bottom:16px;}.hero-left .hero-h2{color:var(--brc-green);font-size:26px;font-weight:500;margin-bottom:28px;letter-spacing:-0.5px;}
+.trust-list{list-style:none;margin-bottom:32px;}.trust-list li{color:var(--brc-white);font-size:16px;margin-bottom:10px;display:flex;align-items:center;gap:10px;}.trust-list li::before{content:'\2713';color:var(--brc-green);font-weight:700;font-size:18px;flex-shrink:0;}
+.hero-ctas{display:flex;flex-direction:column;gap:14px;align-items:flex-start;}.hero-secondary{color:var(--brc-white);font-size:15px;}.hero-secondary a{color:var(--brc-green);}
+.hero-body{color:rgba(255,255,255,0.82);font-size:16px;margin-bottom:28px;line-height:1.8;}.hero-cta{margin-bottom:12px;}
+.form-card{background:#fff;border-radius:12px;padding:32px;box-shadow:0 4px 24px rgba(0,0,0,0.18);}
+.form-card h3{color:var(--brc-dark);margin-bottom:20px;font-size:22px;}
+.form-group{margin-bottom:16px;}.form-group label{display:block;font-size:14px;font-weight:500;color:var(--brc-body);margin-bottom:6px;}
+.form-group input,.form-group select,.form-group textarea{width:100%;padding:12px 14px;font-family:var(--font-main);font-size:15px;border:1px solid #D0D5D8;border-radius:0;color:var(--brc-body);background:#fff;-webkit-appearance:none;appearance:none;}
+.form-group select{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%2345955E' stroke-width='2' fill='none'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 14px center;padding-right:36px;}
+.form-group input:focus,.form-group select:focus,.form-group textarea:focus{outline:2px solid var(--brc-green);}
+.services{background:var(--brc-light);padding:80px 24px;}.services-inner{max-width:1200px;margin:0 auto;}.section-header{margin-bottom:48px;}
+.services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-bottom:40px;}
+.service-card{background:var(--brc-white);border-radius:8px;overflow:hidden;}.service-card img{width:100%;height:180px;object-fit:cover;}.service-card-body{padding:20px;}
+.service-card-body h3{margin-bottom:8px;font-size:20px;}.service-card-body p{font-size:15px;color:var(--brc-body);margin-bottom:12px;line-height:1.6;}
+.reviews{background:var(--brc-white);padding:80px 24px;}.reviews-inner{max-width:1200px;margin:0 auto;}
+.reviews-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:40px;}
+.review-card{border:0.5px solid #E0E0E0;border-radius:8px;padding:24px;}.review-stars{color:var(--brc-green);font-size:20px;margin-bottom:12px;}
+.review-quote{font-style:italic;font-size:16px;color:var(--brc-body);margin-bottom:16px;line-height:1.7;}.review-name{font-weight:700;font-size:14px;color:var(--brc-dark);}.review-source{font-size:12px;color:var(--brc-muted);margin-top:4px;}
+.stats-bar{background:var(--brc-dark);padding:60px 24px;}
+.stats-inner{max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:40px;flex-wrap:wrap;}
+.stats-left .stat-number{font-size:64px;font-weight:700;color:var(--brc-green);line-height:1;letter-spacing:-2px;}.stats-left .stat-label{color:var(--brc-white);font-size:18px;margin-top:8px;}
+.accred-logos{display:flex;align-items:center;gap:20px;flex-wrap:wrap;}.accred-logos img{height:48px;width:auto;filter:brightness(0) invert(1);opacity:0.85;}
+.how-it-works{background:var(--brc-white);padding:80px 24px;text-align:center;}
+.how-it-works-inner{max-width:1100px;margin:0 auto;}.how-it-works h2{margin-bottom:48px;}
+.steps-row{display:grid;grid-template-columns:1fr auto 1fr auto 1fr;align-items:start;margin-bottom:48px;}
+.step{text-align:center;padding:0 16px;}.step-number{font-size:64px;font-weight:700;color:var(--brc-green);line-height:1;margin-bottom:12px;}.step h3{margin-bottom:10px;font-size:20px;}.step p{font-size:15px;color:var(--brc-body);line-height:1.7;}
+.step-connector{width:40px;height:1px;background:#E0E0E0;margin-top:44px;flex-shrink:0;}
+.about{background:var(--brc-white);padding:80px 24px;border-top:1px solid var(--brc-light);}
+.about-inner{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;}
+.about-text h2{margin-bottom:20px;font-size:36px;}.about-text p{font-size:17px;color:var(--brc-body);line-height:1.8;}
+.map-section{background:var(--brc-light);padding:80px 24px;}.map-inner{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:stretch;}
+.map-iframe{border-radius:8px;overflow:hidden;min-height:400px;}.map-iframe iframe{width:100%;height:100%;min-height:400px;border:none;display:block;}
+.map-info{background:var(--brc-white);border-radius:8px;padding:32px;}.map-info h3{margin-bottom:20px;}
+.map-info-row{margin-bottom:14px;font-size:16px;color:var(--brc-body);}.map-info-row strong{display:block;font-size:13px;text-transform:uppercase;letter-spacing:0.5px;color:var(--brc-muted);margin-bottom:2px;}
+.second-form{background:var(--brc-white);padding:80px 24px;}.second-form-inner{max-width:800px;margin:0 auto;}.second-form h2{margin-bottom:16px;}.form-intro{font-size:17px;color:var(--brc-body);margin-bottom:24px;}
+.form-trust-list{list-style:none;margin-bottom:32px;}.form-trust-list li{color:var(--brc-body);font-size:16px;margin-bottom:10px;display:flex;align-items:center;gap:10px;}.form-trust-list li::before{content:'\2713';color:var(--brc-green);font-weight:700;font-size:18px;flex-shrink:0;}
+.content-section{background:var(--brc-white);padding:80px 24px;}.content-inner{max-width:1100px;margin:0 auto;}
+.content-inner h2{margin-bottom:24px;}.content-inner p{margin-bottom:18px;font-size:17px;}.content-inner ul{margin:0 0 24px 20px;}.content-inner ul li{margin-bottom:8px;font-size:16px;}
+.trust-bullets{list-style:none;margin:24px 0 0;padding:0;}.trust-bullets li{display:flex;align-items:center;gap:10px;font-size:16px;margin-bottom:10px;}.trust-bullets li::before{content:'\2713';color:var(--brc-green);font-weight:700;font-size:18px;flex-shrink:0;}
+.faqs{background:var(--brc-light);padding:80px 24px;}.faqs-inner{max-width:800px;margin:0 auto;}.faqs h2{margin-bottom:36px;}.faq-item{border-bottom:1px solid #D5D8DA;}
+.faq-question{width:100%;background:none;border:none;text-align:left;font-family:var(--font-main);font-size:17px;font-weight:600;color:var(--brc-dark);padding:20px 0;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px;}
+.faq-question::after{content:'+';font-size:24px;color:var(--brc-green);flex-shrink:0;transition:transform 0.25s ease;}.faq-question[aria-expanded="true"]::after{transform:rotate(45deg);}
+.faq-answer{max-height:0;overflow:hidden;transition:max-height 0.25s ease;}.faq-answer-inner{padding:0 0 20px;font-size:16px;color:var(--brc-body);line-height:1.8;}
+footer{background:var(--brc-dark);padding:64px 24px 0;}
+.footer-inner{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:2fr 1fr 1fr;gap:48px;padding-bottom:48px;}
+.footer-col h4{color:var(--brc-white);font-size:16px;font-weight:600;margin-bottom:16px;text-transform:uppercase;letter-spacing:0.5px;}
+.footer-logo{margin-bottom:16px;}.footer-logo img{height:56px;}.footer-blurb{color:var(--brc-muted);font-size:14px;line-height:1.7;margin-bottom:20px;}
+.footer-socials{display:flex;gap:12px;}.footer-socials a{display:inline-flex;align-items:center;justify-content:center;width:36px;height:36px;border-radius:50%;background:rgba(255,255,255,0.1);color:var(--brc-white);font-size:14px;text-decoration:none;font-weight:600;transition:background 0.2s;}.footer-socials a:hover{background:var(--brc-green);}
+.footer-links{list-style:none;}.footer-links li{margin-bottom:10px;}.footer-links a{color:var(--brc-muted);font-size:14px;text-decoration:none;}.footer-links a:hover{color:var(--brc-green);}
+.footer-contact-row{color:var(--brc-muted);font-size:14px;margin-bottom:10px;}.footer-contact-row a{color:var(--brc-muted);}.footer-contact-row a:hover{color:var(--brc-green);}
+.footer-bottom{max-width:1200px;margin:0 auto;padding:20px 0;border-top:1px solid rgba(255,255,255,0.08);display:flex;align-items:center;justify-content:space-between;gap:16px;}
+.footer-copyright{color:var(--brc-muted);font-size:13px;}
+@media(max-width:900px){h1{font-size:39px;}h2{font-size:28px;}.hero-inner{grid-template-columns:1fr;}.services-grid{grid-template-columns:repeat(2,1fr);}.reviews-grid{grid-template-columns:1fr;}.stats-inner{flex-direction:column;text-align:center;}.steps-row{grid-template-columns:1fr;}.step-connector{display:none;}.about-inner{grid-template-columns:1fr;}.map-inner{grid-template-columns:1fr;}.footer-inner{grid-template-columns:1fr;gap:32px;}.footer-bottom{flex-direction:column;text-align:center;}}
+@media(max-width:600px){.services-grid{grid-template-columns:1fr;}.header-phone{display:none;}.hero{padding:48px 20px;}.reviews-grid{overflow-x:auto;display:flex;flex-wrap:nowrap;gap:16px;}.review-card{min-width:280px;}}</style>
 </head>
 <body>
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PDXJSH3Z" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<header class="site-header">
-  <div class="container">
-    <div class="header-inner">
-      <a href="/" class="header-logo"><img src="https://service.ballaratcsc.com.au/wp-content/uploads/2025/07/BSCS_Logo_M-34538090_REVA-625.png" alt="Ballarat Commercial Service Centre" width="180" height="52"></a>
-      <div class="header-contact">
-        <div class="header-contact-item"><span class="label">Call us at</span><a href="tel:+61353224674">03 5322 4674</a></div>
-        <div class="header-contact-item"><span class="label">Text us at</span><a href="sms:0488825361">0488 825 361</a></div>
-      </div>
-    </div>
+<header>
+  <div class="header-inner">
+    <a href="/" class="header-logo"><img src="https://service.ballaratcsc.com.au/wp-content/uploads/2025/07/BSCS_Logo_M-34538090_REVA-625.png" alt="Ballarat Commercial Service Centre" width="160" height="56"></a>
+    <a href="tel:+61353224674" class="header-phone">03 5322 4674</a>
+    <a href="#form" class="btn btn-pill">Request Booking</a>
   </div>
 </header>
-<div class="breadcrumb">
-  <div class="container"><a href="/">Home</a><span>›</span>Heavy Vehicle Service &amp; Repair</div>
-</div>
+<div class="breadcrumb"><div class="breadcrumb-inner"><a href="/">Home</a> &rsaquo; Heavy Vehicle Service &amp; Repair</div></div>
 <section class="hero">
-  <div class="container">
-    <div class="hero-inner">
-      <div class="hero-left">
-        <div class="hero-subheading">Reliable Truck Mechanic Services Backed by Technology and Experience</div>
-        <h1>Heavy Vehicle Service and Repair in Ballarat</h1>
-        <p class="hero-body">For over 20 years, we have supported local operators with dependable heavy vehicle servicing. We use modern diagnostics and quality parts to keep your vehicles running reliably day in, day out.</p>
-        <div class="hero-ctas">
-          <a href="#form" class="btn">Request Booking</a>
-          <a href="tel:+61353224674" class="btn btn-secondary">Call Now</a>
-        </div>
-      </div>
-      <div class="hero-form-wrap">
-        <!-- TODO: replace action with form handler — contact@ballaratcsc.com.au -->
-        <form class="hero-form" action="mailto:contact@ballaratcsc.com.au" method="post" enctype="text/plain">
-          <h3>Request Booking</h3>
-          <div class="form-group"><label for="ht-name">Name</label><input type="text" id="ht-name" name="name" placeholder="Your full name" required></div>
-          <div class="form-group"><label for="ht-email">Email Address</label><input type="email" id="ht-email" name="email" placeholder="your@email.com" required></div>
-          <div class="form-group"><label for="ht-phone">Phone Number</label><input type="tel" id="ht-phone" name="phone" placeholder="Your phone number" required></div>
-          <div class="form-group"><label for="ht-svc">Service Needed</label><select id="ht-svc" name="service" required><option value="" disabled selected>Select a service</option>
-              <option>Service</option><option>Vehicle Repair</option></select></div>
-          <div class="form-group-row">
-            <div class="form-group"><label for="ht-make">Make</label><input type="text" id="ht-make" name="make" placeholder="e.g. Isuzu"></div>
-            <div class="form-group"><label for="ht-mdl">Model + Year</label><input type="text" id="ht-mdl" name="model_year" placeholder="e.g. NPR 2020"></div>
+  <div class="hero-inner">
+    <div class="hero-left">
+      <h1>Heavy Vehicle Service and Repair in Ballarat</h1>
+      <p class="hero-h2" style="color:var(--brc-green);font-size:24px;font-weight:500;margin-bottom:20px;">Reliable Truck Mechanic Services Backed by Technology and Experience</p>
+      <p class="hero-body">For over 20 years, we have supported local operators with dependable heavy vehicle servicing. We use modern diagnostics and quality parts to keep your vehicles running reliably day in, day out.</p>
+      <a href="#form" class="btn hero-cta">Request Booking</a>
+    </div>
+    <div class="hero-right">
+      <div class="form-card">
+        <h3>Request a Booking</h3>
+        <!-- TODO: replace action with form handler &mdash; contact@ballaratcsc.com.au -->
+        <form action="#" method="POST">
+          <div class="form-group"><label for="h-name">Your Name</label><input type="text" id="h-name" name="name" placeholder="John Smith" required></div>
+          <div class="form-group"><label for="h-phone">Phone Number</label><input type="tel" id="h-phone" name="phone" placeholder="0400 000 000" required></div>
+          <div class="form-group"><label for="h-service">Service Required</label>
+            <select id="h-service" name="service" required>
+              <option value="" disabled selected>Select a service&hellip;</option>
+              <option>Service</option>
+              <option>Vehicle Repair</option>
+            </select>
           </div>
-          <div class="form-group"><label for="ht-msg">How can we help?</label><textarea id="ht-msg" name="message" placeholder="Tell us what you need..."></textarea></div>
-          <button type="submit" class="btn form-submit">Request Booking</button>
+          <button type="submit" class="btn btn-full">Request Booking</button>
         </form>
       </div>
     </div>
   </div>
 </section>
-<section class="accreditation">
-  <div class="container"><div class="accreditation-logos">
-      <img src="https://service.ballaratroadworthy.com/wp-content/uploads/2024/10/vacc-new.webp" alt="VACC Accredited">
-      <img src="https://service.ballaratroadworthy.com/wp-content/uploads/2024/10/bea.webp" alt="BEA Member">
-      <img src="https://service.ballaratroadworthy.com/wp-content/uploads/2024/10/aaaa.webp" alt="AAAA Member">
-      <img src="https://service.ballaratroadworthy.com/wp-content/uploads/2024/10/hvia.webp" alt="HVIA Member">
-      <img src="https://service.ballaratroadworthy.com/wp-content/uploads/2024/10/green-stamp.webp" alt="Green Stamp">
-      <img src="https://service.ballaratroadworthy.com/wp-content/uploads/2024/10/employee.webp" alt="Employer of Choice">
-  </div></div>
-</section>
-<section class="main-content">
-  <div class="container">
-<h2>Full Mechanical Support for Heavy Vehicles</h2>
-    <p>We provide the full range of heavy vehicle mechanical services — from routine maintenance through to complex repairs. Our workshop is equipped with the tools and diagnostic equipment needed for modern diesel and heavy vehicle systems.</p>
+<section class="content-section">
+  <div class="content-inner">
+    <h2>Full Mechanical Support for Heavy Vehicles</h2>
     <ul>
-      <li>Diesel engine diagnostics and overhaul</li>
-      <li>Brake system repairs and replacements</li>
-      <li>Suspension and steering overhaul</li>
-      <li>Cooling system and radiator repairs</li>
+      <li>Diesel engine diagnostics and repairs</li>
+      <li>Brake system servicing and repair</li>
+      <li>Suspension and steering work</li>
+      <li>Cooling system maintenance</li>
       <li>Electrical fault diagnosis</li>
-      <li>Transmission and gearbox repairs</li>
-      <li>DPF cleaning and emission system work</li>
-      <li>Fleet maintenance and scheduling</li>
+      <li>Transmission servicing</li>
+      <li>Preventative maintenance programs</li>
     </ul>
-    <p>With 20+ years of experience and modern diagnostic equipment, we get to the root cause of problems and fix them properly the first time.</p>
+    <h2 style="margin-top:48px;">Why 20+ Years of Experience Matters</h2>
+    <p>Modern heavy vehicles are increasingly complex. We invest in up-to-date diagnostic technology to ensure accurate fault diagnosis and quality repairs. Pair that with two decades of hands-on experience with Ballarat&rsquo;s commercial fleet operators, and you get a service you can rely on.</p>
   </div>
 </section>
 <section class="stats-bar">
-  <div class="container">
-    <div class="stats-inner">
-      <div class="stats-left">
-        <img class="stars" src="https://service.ballaratroadworthy.com/wp-content/uploads/2024/10/stars.svg" alt="5 star rating">
-        <div class="stats-main">Over 1,000 cars serviced and repaired</div>
-        <div class="stats-sub">Trusted by 10,000+ drivers in Ballarat and surrounding areas</div>
-      </div>
-      <div class="stats-right"><img src="https://service.ballaratroadworthy.com/wp-content/uploads/2024/10/testimonials.png" alt="Google Reviews" loading="lazy"></div>
+  <div class="stats-inner">
+    <div class="stats-left"><div class="stat-number">20+</div><div class="stat-label">Years servicing Ballarat's commercial fleets</div></div>
+    <div class="accred-logos">
+      <img src="https://service.ballaratroadworthy.com/wp-content/uploads/2024/10/vacc-new.webp" alt="VACC" loading="lazy">
+      <img src="https://service.ballaratroadworthy.com/wp-content/uploads/2024/10/bea.webp" alt="BEA" loading="lazy">
+      <img src="https://service.ballaratroadworthy.com/wp-content/uploads/2024/10/aaaa.webp" alt="AAAA" loading="lazy">
+      <img src="https://service.ballaratroadworthy.com/wp-content/uploads/2024/10/hvia.webp" alt="HVIA" loading="lazy">
+      <img src="https://service.ballaratroadworthy.com/wp-content/uploads/2024/10/green-stamp.webp" alt="Green Stamp" loading="lazy">
+      <img src="https://service.ballaratroadworthy.com/wp-content/uploads/2024/10/employee.webp" alt="Employee" loading="lazy">
+    </div>
+  </div>
+</section>
+<section class="reviews">
+  <div class="reviews-inner">
+    <h2>Trusted by Ballarat Operators</h2>
+    <div class="reviews-grid">
+      <div class="review-card"><div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="review-quote">"Professional, thorough and fast. Got our trucks inspected without any downtime to our operation. Highly recommend."</p><p class="review-name">Fleet Manager, Ballarat</p><p class="review-source">Google Review</p></div>
+      <div class="review-card"><div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="review-quote">"James and the team know heavy vehicles inside and out. Honest advice, fast turnaround and everything documented properly."</p><p class="review-name">Transport Operator</p><p class="review-source">Google Review</p></div>
+      <div class="review-card"><div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="review-quote">"Reliable, experienced and no messing around. They get the job done properly and keep us compliant. Great team."</p><p class="review-name">Local Business Owner</p><p class="review-source">Google Review</p></div>
     </div>
   </div>
 </section>
 <section class="how-it-works">
-  <div class="container">
+  <div class="how-it-works-inner">
     <h2>How It Works</h2>
-    <div class="steps-grid">
-      <div class="step"><div class="step-number">01</div><h3>Contact Us</h3><p>Describe your vehicle, the issue and your urgency. We'll advise on the fastest path forward.</p></div>
-      <div class="step"><div class="step-number">02</div><h3>We Diagnose and Repair</h3><p>Thorough diagnosis with modern equipment, then quality repairs using appropriate heavy vehicle parts.</p></div>
-      <div class="step"><div class="step-number">03</div><h3>Vehicle Returned Fast</h3><p>Full documentation of work completed. Your vehicle is back in service as quickly as possible.</p></div>
-      
+    <div class="steps-row">
+      <div class="step"><div class="step-number">1</div><h3>Request a Booking</h3><p>Call us or complete the form. We confirm your appointment quickly.</p></div>
+      <div class="step-connector"></div>
+      <div class="step"><div class="step-number">2</div><h3>We Carry Out the Work</h3><p>Our licensed technicians inspect or service your vehicle to the required standard.</p></div>
+      <div class="step-connector"></div>
+      <div class="step"><div class="step-number">3</div><h3>Get Back on the Road</h3><p>Documentation issued on the day. Full explanation of all work completed.</p></div>
     </div>
-    <div class="how-it-works-cta"><a href="#form" class="btn">Book Now</a></div>
+    <a href="#form" class="btn">Request Booking</a>
   </div>
 </section>
-<section class="location">
-  <div class="container">
-    <h2>Ballarat mechanics open from Monday to Friday, 07:30 AM to 05:30 PM</h2>
-    <iframe src="https://maps.google.com/maps?q=Ballarat%20Commercial%20Service%20Centre&t=m&z=10&output=embed&iwloc=near" title="Ballarat Commercial Service Centre location map" allowfullscreen loading="lazy"></iframe>
+<section class="map-section">
+  <div class="map-inner">
+    <div class="map-iframe"><iframe src="https://maps.google.com/maps?q=354%20Dowling%20St%2C%20Wendouree%20VIC%203355&t=m&z=15&output=embed&iwloc=near" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Ballarat Commercial Service Centre location"></iframe></div>
+    <div class="map-info">
+      <h3>Ballarat Commercial Service Centre</h3>
+      <div class="map-info-row"><strong>Hours</strong>Monday &ndash; Friday: 07:30 AM &ndash; 05:30 PM</div>
+      <div class="map-info-row"><strong>Address</strong><a href="https://maps.google.com/?q=354+Dowling+St,+Wendouree+VIC+3355" target="_blank" rel="noopener">Shed 1/354 Dowling St, Wendouree VIC 3355</a></div>
+      <div class="map-info-row"><strong>Phone</strong><a href="tel:+61353224674">03 5322 4674</a></div>
+      <div class="map-info-row"><strong>SMS</strong><a href="sms:0488825361">0488 825 361</a></div>
+    </div>
   </div>
 </section>
-<section class="cta-form" id="form">
-  <div class="container">
-    <div class="cta-form-inner">
-      <div class="cta-form-left">
-        <h2>Book Your Heavy Vehicle Repair Today</h2>
-        <p>Our team is experienced, honest and focused on getting your vehicle sorted fast.</p>
-        <ul class="trust-list"><li>20+ Years Experience</li><li>Modern Diagnostics</li><li>Fast Turnaround</li><li>All Heavy Vehicle Types</li></ul>
+<section class="second-form" id="form">
+  <div class="second-form-inner">
+    <h2>Book Heavy Vehicle Service or Repair Today</h2>
+    <p class="form-intro">Our team is fast, honest, and focused on keeping your fleet compliant and on the road.</p>
+    <ul class="form-trust-list">
+      <li>20+ Years Experience</li>
+      <li>Modern Diagnostics Equipment</li>
+      <li>Fast Turnaround</li>
+    </ul>
+    <!-- TODO: replace action with form handler &mdash; contact@ballaratcsc.com.au -->
+    <form action="#" method="POST">
+      <div class="form-group"><label for="f-name">Your Name</label><input type="text" id="f-name" name="name" placeholder="John Smith" required></div>
+      <div class="form-group"><label for="f-phone">Phone Number</label><input type="tel" id="f-phone" name="phone" placeholder="0400 000 000" required></div>
+      <div class="form-group"><label for="f-email">Email Address</label><input type="email" id="f-email" name="email" placeholder="john@example.com"></div>
+      <div class="form-group"><label for="f-service">Service Required</label>
+        <select id="f-service" name="service" required>
+              <option value="" disabled selected>Select a service&hellip;</option>
+              <option>Service</option>
+              <option>Vehicle Repair</option>
+        </select>
       </div>
-      <div class="cta-form-right">
-        <!-- TODO: replace action with form handler — contact@ballaratcsc.com.au -->
-        <form class="hero-form" action="mailto:contact@ballaratcsc.com.au" method="post" enctype="text/plain">
-          <h3>Request Booking</h3>
-          <div class="form-group"><label for="f-name">Name</label><input type="text" id="f-name" name="name" placeholder="Your full name" required></div>
-          <div class="form-group"><label for="f-email">Email Address</label><input type="email" id="f-email" name="email" placeholder="your@email.com" required></div>
-          <div class="form-group"><label for="f-phone">Phone Number</label><input type="tel" id="f-phone" name="phone" placeholder="Your phone number" required></div>
-          <div class="form-group"><label for="f-svc">Service Needed</label><select id="f-svc" name="service" required><option value="" disabled selected>Select a service</option>
-              <option>Service</option><option>Vehicle Repair</option></select></div>
-          <div class="form-group-row">
-            <div class="form-group"><label for="f-make">Make</label><input type="text" id="f-make" name="make" placeholder="e.g. Isuzu"></div>
-            <div class="form-group"><label for="f-mdl">Model + Year</label><input type="text" id="f-mdl" name="model_year" placeholder="e.g. NPR 2020"></div>
-          </div>
-          <div class="form-group"><label for="f-msg">How can we help?</label><textarea id="f-msg" name="message" placeholder="Tell us what you need..."></textarea></div>
-          <button type="submit" class="btn form-submit">Request Booking</button>
-        </form>
-      </div>
-    </div>
+      <div class="form-group"><label for="f-message">Additional Details (optional)</label><textarea id="f-message" name="message" rows="3" placeholder="Tell us about your vehicle or fleet&hellip;"></textarea></div>
+      <button type="submit" class="btn btn-full">Request Booking</button>
+    </form>
   </div>
 </section>
 <section class="faqs">
-  <div class="container">
+  <div class="faqs-inner">
     <h2>Frequently Asked Questions</h2>
-    <div class="faq-list">
-      <div class="faq-item"><div class="faq-q">What heavy vehicle repairs do you specialise in?</div><div class="faq-a">We specialise in diesel engine diagnostics, brake and suspension repairs, cooling and fuel systems, electrical fault tracing and transmission work for trucks, buses and commercial vehicles.</div></div>
-      <div class="faq-item"><div class="faq-q">Do you have the right equipment for large vehicles?</div><div class="faq-a">Yes. Our workshop is equipped to handle large trucks and buses including the hoists, diagnostic tools and equipment required for heavy vehicle work.</div></div>
-      <div class="faq-item"><div class="faq-q">How quickly can you turn around a repair?</div><div class="faq-a">Turnaround depends on the nature of the repair and parts availability. We prioritise urgent repairs and communicate clearly on timeframes throughout the process.</div></div>
-      <div class="faq-item"><div class="faq-q">Do you handle emergency breakdowns?</div><div class="faq-a">In some cases we can arrange priority workshop time for breakdowns. Contact us immediately to discuss your situation.</div></div>
-    </div>
+    <div class="faq-item"><button class="faq-question" aria-expanded="false">What heavy vehicle repairs do you specialise in?</button><div class="faq-answer"><div class="faq-answer-inner">We specialise in diesel engine repairs, brake and clutch work, suspension, cooling systems, electrical fault diagnosis and transmission servicing for all heavy vehicle types.</div></div></div>
+    <div class="faq-item"><button class="faq-question" aria-expanded="false">Do you have the right equipment for large vehicles?</button><div class="faq-answer"><div class="faq-answer-inner">Yes. Our facility and equipment are suited to heavy vehicles of all sizes, from light commercial through to prime movers and buses.</div></div></div>
+    <div class="faq-item"><button class="faq-question" aria-expanded="false">How quickly can you turn around a repair?</button><div class="faq-answer"><div class="faq-answer-inner">This depends on the nature of the work. We&rsquo;ll give you an accurate timeframe when you bring the vehicle in. We prioritise minimising your downtime.</div></div></div>
+    <div class="faq-item"><button class="faq-question" aria-expanded="false">Do you handle emergency breakdowns?</button><div class="faq-answer"><div class="faq-answer-inner">Call us on <a href="tel:+61353224674">03 5322 4674</a> to discuss your situation. We&rsquo;ll do our best to assist.</div></div></div>
   </div>
 </section>
-<footer class="site-footer">
-  <div class="container">
-    <div class="footer-grid">
-      <div class="footer-brand">
-        <a href="/"><img src="https://service.ballaratcsc.com.au/wp-content/uploads/2025/07/BSCS_Logo_M-34538090_REVA-625.png" alt="Ballarat Commercial Service Centre" width="160" height="48"></a>
-        <p>At Ballarat Commercial Service Centre, we have extensive experience in the automotive and heavy vehicle repair industry. Our certified technicians utilise advanced diagnostic tools to provide services from routine maintenance to complex repairs.</p>
-        <div class="footer-socials">
-          <a href="https://www.facebook.com/ballaratrwc/" target="_blank" rel="noopener">Facebook</a>
-          <a href="https://www.instagram.com/ballaratrwc/" target="_blank" rel="noopener">Instagram</a>
-        </div>
+<footer>
+  <div class="footer-inner">
+    <div class="footer-col">
+      <div class="footer-logo"><img src="https://service.ballaratcsc.com.au/wp-content/uploads/2025/07/BSCS_Logo_M-34538090_REVA-625.png" alt="Ballarat Commercial Service Centre" height="56"></div>
+      <p class="footer-blurb">Ballarat Commercial Service Centre provides heavy vehicle servicing, repairs, roadworthy inspections and compliance checks for buses, trucks and commercial fleets across the Ballarat region.</p>
+      <div class="footer-socials">
+        <a href="https://www.facebook.com/ballaratrwc/" target="_blank" rel="noopener" aria-label="Facebook">f</a>
+        <a href="https://www.instagram.com/ballaratrwc/" target="_blank" rel="noopener" aria-label="Instagram">ig</a>
       </div>
-      <div class="footer-col"><h4>Services</h4><ul>          <li><a href="/bus-safety-inspections/">Bus Safety Inspections</a></li>
-          <li><a href="/bus-mechanical/">Bus Mechanical</a></li>
-          <li><a href="/bus-rwc/">Bus Roadworthy</a></li>
-          <li><a href="/truck-inspections/">Truck Inspections</a></li>
-          <li><a href="/truck-rwc/">Truck Roadworthy</a></li>
-          <li><a href="/truck-repair-servicing-ballarat/">Truck Repair &amp; Servicing</a></li>
-          <li><a href="/heavy-vehicle-service-ballarat/">Heavy Vehicle Service</a></li>
-          <li><a href="/heavy-vehicle-service-repair/">Heavy Vehicle Repair</a></li>
-          <li><a href="/privacy-policy/">Privacy Policy</a></li>
-          <li><a href="/terms-of-service/">Terms of Service</a></li></ul></div>
-      <div class="footer-col"><h4>Contact</h4><ul>
-        <li><a href="tel:+61353224674">03 5322 4674</a></li>
-        <li><a href="sms:0488825361">0488 825 361</a></li>
-        <li><a href="#form">Request Booking</a></li>
-      </ul></div>
     </div>
-    <div class="footer-bottom">2026 &copy; Ballarat Commercial Service Centre | Shed 1/354 Dowling St, Wendouree VIC 3355</div>
+    <div class="footer-col">
+      <h4>Services</h4>
+      <ul class="footer-links">
+        <li><a href="/truck-repair-servicing-ballarat/">Truck Repair &amp; Servicing</a></li>
+        <li><a href="/truck-rwc/">Truck &amp; Trailer RWC</a></li>
+        <li><a href="/truck-inspections/">Truck Inspections</a></li>
+        <li><a href="/bus-safety-inspections/">Bus Safety Inspections</a></li>
+        <li><a href="/bus-rwc/">Bus Roadworthy</a></li>
+        <li><a href="/heavy-vehicle-service-ballarat/">Heavy Vehicle Service</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <div class="footer-contact-row"><a href="https://maps.google.com/?q=354+Dowling+St,+Wendouree+VIC+3355" target="_blank" rel="noopener">Shed 1/354 Dowling St, Wendouree VIC 3355</a></div>
+      <div class="footer-contact-row"><a href="tel:+61353224674">03 5322 4674</a></div>
+      <div class="footer-contact-row"><a href="sms:0488825361">SMS: 0488 825 361</a></div>
+      <div class="footer-contact-row">Mon&ndash;Fri: 07:30 AM &ndash; 05:30 PM</div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span class="footer-copyright">2026 &copy; Ballarat Commercial Service Centre | Shed 1/354 Dowling St, Wendouree VIC 3355</span>
+    <div><a href="https://mechanicmarketing.co" target="_blank" rel="noopener" style="color:var(--brc-muted);font-size:12px;">Marketing by Mechanic Marketing</a></div>
   </div>
 </footer>
+<script>document.querySelectorAll('.faq-question').forEach(btn=>{btn.addEventListener('click',()=>{const answer=btn.nextElementSibling;const isOpen=btn.getAttribute('aria-expanded')==='true';btn.setAttribute('aria-expanded',!isOpen);answer.style.maxHeight=isOpen?'0':answer.scrollHeight+'px';});});</script>
 </body>
 </html>
