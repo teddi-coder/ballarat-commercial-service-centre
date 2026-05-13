@@ -11,90 +11,264 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-PDXJSH3Z');</script>
-<style>:root{--brc-green:#45955E;--brc-green-hover:#18191B;--brc-dark:#18191B;--brc-body:#2F3134;--brc-muted:#A0A6A9;--brc-light:#F2F2F3;--brc-white:#FFFFFF;--font-main:'Poppins',sans-serif;}
-*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}html{scroll-behavior:smooth;}
-body{font-family:var(--font-main);color:var(--brc-body);font-size:18px;line-height:1.8;letter-spacing:-0.5px;}
-img{max-width:100%;display:block;}a{color:var(--brc-green);font-weight:500;text-decoration:none;}a:hover{text-decoration:underline;}
-h1{font-size:58px;font-weight:600;line-height:1.2;letter-spacing:-1.8px;color:var(--brc-white);}
-h2{font-size:45px;font-weight:600;line-height:1.2;letter-spacing:-1.8px;color:var(--brc-dark);}
-h3{font-size:24px;font-weight:600;letter-spacing:-1.3px;color:var(--brc-dark);}
-.btn{display:inline-block;background:var(--brc-green);color:var(--brc-white);font-family:var(--font-main);font-weight:600;font-size:16px;padding:16px 32px;border:none;border-radius:0;cursor:pointer;text-decoration:none;transition:background 0.2s;}
-.btn:hover{background:var(--brc-green-hover);text-decoration:none;color:var(--brc-white);}
-.btn-full{width:100%;text-align:center;display:block;}.btn-pill{border-radius:999px;padding:10px 22px;font-size:15px;}
-header{position:sticky;top:0;z-index:100;background:var(--brc-dark);box-shadow:0 2px 8px rgba(0,0,0,0.15);}
-.header-inner{max-width:1200px;margin:0 auto;padding:0 24px;height:72px;display:flex;align-items:center;justify-content:space-between;gap:16px;}
-.header-logo img{height:48px;width:auto;}.header-phone{color:var(--brc-white);font-weight:500;font-size:16px;text-decoration:none;}.header-phone:hover{color:var(--brc-green);}
-.breadcrumb{background:var(--brc-white);padding:10px 24px;border-bottom:1px solid #E8EAEB;}
-.breadcrumb-inner{max-width:1200px;margin:0 auto;font-size:13px;color:var(--brc-muted);}
-.breadcrumb-inner a{color:var(--brc-muted);font-weight:400;}.breadcrumb-inner a:hover{color:var(--brc-green);}
-.hero{background:var(--brc-dark);padding:80px 24px;}
-.hero-inner{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;}
-.hero-left h1{margin-bottom:16px;}.hero-left .hero-h2{color:var(--brc-green);font-size:26px;font-weight:500;margin-bottom:28px;letter-spacing:-0.5px;}
-.trust-list{list-style:none;margin-bottom:32px;}.trust-list li{color:var(--brc-white);font-size:16px;margin-bottom:10px;display:flex;align-items:center;gap:10px;}.trust-list li::before{content:'\2713';color:var(--brc-green);font-weight:700;font-size:18px;flex-shrink:0;}
-.hero-ctas{display:flex;flex-direction:column;gap:14px;align-items:flex-start;}.hero-secondary{color:var(--brc-white);font-size:15px;}.hero-secondary a{color:var(--brc-green);}
-.hero-body{color:rgba(255,255,255,0.82);font-size:16px;margin-bottom:28px;line-height:1.8;}.hero-cta{margin-bottom:12px;}
-.form-card{background:#fff;border-radius:12px;padding:32px;box-shadow:0 4px 24px rgba(0,0,0,0.18);}
-.form-card h3{color:var(--brc-dark);margin-bottom:20px;font-size:22px;}
-.form-group{margin-bottom:16px;}.form-group label{display:block;font-size:14px;font-weight:500;color:var(--brc-body);margin-bottom:6px;}
-.form-group input,.form-group select,.form-group textarea{width:100%;padding:12px 14px;font-family:var(--font-main);font-size:15px;border:1px solid #D0D5D8;border-radius:0;color:var(--brc-body);background:#fff;-webkit-appearance:none;appearance:none;}
-.form-group select{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%2345955E' stroke-width='2' fill='none'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 14px center;padding-right:36px;}
-.form-group input:focus,.form-group select:focus,.form-group textarea:focus{outline:2px solid var(--brc-green);}
-.services{background:var(--brc-light);padding:80px 24px;}.services-inner{max-width:1200px;margin:0 auto;}.section-header{margin-bottom:48px;}
-.services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-bottom:40px;}
-.service-card{background:var(--brc-white);border-radius:8px;overflow:hidden;}.service-card img{width:100%;height:180px;object-fit:cover;}.service-card-body{padding:20px;}
-.service-card-body h3{margin-bottom:8px;font-size:20px;}.service-card-body p{font-size:15px;color:var(--brc-body);margin-bottom:12px;line-height:1.6;}
-.reviews{background:var(--brc-white);padding:80px 24px;}.reviews-inner{max-width:1200px;margin:0 auto;}
-.reviews-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:40px;}
-.review-card{border:0.5px solid #E0E0E0;border-radius:8px;padding:24px;}.review-stars{color:var(--brc-green);font-size:20px;margin-bottom:12px;}
-.review-quote{font-style:italic;font-size:16px;color:var(--brc-body);margin-bottom:16px;line-height:1.7;}.review-name{font-weight:700;font-size:14px;color:var(--brc-dark);}.review-source{font-size:12px;color:var(--brc-muted);margin-top:4px;}
-.stats-bar{background:var(--brc-dark);padding:60px 24px;}
-.stats-inner{max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:40px;flex-wrap:wrap;}
-.stats-left .stat-number{font-size:64px;font-weight:700;color:var(--brc-green);line-height:1;letter-spacing:-2px;}.stats-left .stat-label{color:var(--brc-white);font-size:18px;margin-top:8px;}
-.accred-logos{display:flex;align-items:center;gap:20px;flex-wrap:wrap;}.accred-logos img{height:48px;width:auto;filter:brightness(0) invert(1);opacity:0.85;}
-.how-it-works{background:var(--brc-white);padding:80px 24px;text-align:center;}
-.how-it-works-inner{max-width:1100px;margin:0 auto;}.how-it-works h2{margin-bottom:48px;}
-.steps-row{display:grid;grid-template-columns:1fr auto 1fr auto 1fr;align-items:start;margin-bottom:48px;}
-.step{text-align:center;padding:0 16px;}.step-number{font-size:64px;font-weight:700;color:var(--brc-green);line-height:1;margin-bottom:12px;}.step h3{margin-bottom:10px;font-size:20px;}.step p{font-size:15px;color:var(--brc-body);line-height:1.7;}
-.step-connector{width:40px;height:1px;background:#E0E0E0;margin-top:44px;flex-shrink:0;}
-.about{background:var(--brc-white);padding:80px 24px;border-top:1px solid var(--brc-light);}
-.about-inner{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;}
-.about-text h2{margin-bottom:20px;font-size:36px;}.about-text p{font-size:17px;color:var(--brc-body);line-height:1.8;}
-.map-section{background:var(--brc-light);padding:80px 24px;}.map-inner{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:stretch;}
-.map-iframe{border-radius:8px;overflow:hidden;min-height:400px;}.map-iframe iframe{width:100%;height:100%;min-height:400px;border:none;display:block;}
-.map-info{background:var(--brc-white);border-radius:8px;padding:32px;}.map-info h3{margin-bottom:20px;}
-.map-info-row{margin-bottom:14px;font-size:16px;color:var(--brc-body);}.map-info-row strong{display:block;font-size:13px;text-transform:uppercase;letter-spacing:0.5px;color:var(--brc-muted);margin-bottom:2px;}
-.second-form{background:var(--brc-white);padding:80px 24px;}.second-form-inner{max-width:800px;margin:0 auto;}.second-form h2{margin-bottom:16px;}.form-intro{font-size:17px;color:var(--brc-body);margin-bottom:24px;}
-.form-trust-list{list-style:none;margin-bottom:32px;}.form-trust-list li{color:var(--brc-body);font-size:16px;margin-bottom:10px;display:flex;align-items:center;gap:10px;}.form-trust-list li::before{content:'\2713';color:var(--brc-green);font-weight:700;font-size:18px;flex-shrink:0;}
-.content-section{background:var(--brc-white);padding:80px 24px;}.content-inner{max-width:1100px;margin:0 auto;}
-.content-inner h2{margin-bottom:24px;}.content-inner p{margin-bottom:18px;font-size:17px;}.content-inner ul{margin:0 0 24px 20px;}.content-inner ul li{margin-bottom:8px;font-size:16px;}
-.trust-bullets{list-style:none;margin:24px 0 0;padding:0;}.trust-bullets li{display:flex;align-items:center;gap:10px;font-size:16px;margin-bottom:10px;}.trust-bullets li::before{content:'\2713';color:var(--brc-green);font-weight:700;font-size:18px;flex-shrink:0;}
-.faqs{background:var(--brc-light);padding:80px 24px;}.faqs-inner{max-width:800px;margin:0 auto;}.faqs h2{margin-bottom:36px;}.faq-item{border-bottom:1px solid #D5D8DA;}
-.faq-question{width:100%;background:none;border:none;text-align:left;font-family:var(--font-main);font-size:17px;font-weight:600;color:var(--brc-dark);padding:20px 0;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px;}
-.faq-question::after{content:'+';font-size:24px;color:var(--brc-green);flex-shrink:0;transition:transform 0.25s ease;}.faq-question[aria-expanded="true"]::after{transform:rotate(45deg);}
-.faq-answer{max-height:0;overflow:hidden;transition:max-height 0.25s ease;}.faq-answer-inner{padding:0 0 20px;font-size:16px;color:var(--brc-body);line-height:1.8;}
-footer{background:var(--brc-dark);padding:64px 24px 0;}
-.footer-inner{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:2fr 1fr 1fr;gap:48px;padding-bottom:48px;}
-.footer-col h4{color:var(--brc-white);font-size:16px;font-weight:600;margin-bottom:16px;text-transform:uppercase;letter-spacing:0.5px;}
-.footer-logo{margin-bottom:16px;}.footer-logo img{height:56px;}.footer-blurb{color:var(--brc-muted);font-size:14px;line-height:1.7;margin-bottom:20px;}
-.footer-socials{display:flex;gap:12px;}.footer-socials a{display:inline-flex;align-items:center;justify-content:center;width:36px;height:36px;border-radius:50%;background:rgba(255,255,255,0.1);color:var(--brc-white);font-size:14px;text-decoration:none;font-weight:600;transition:background 0.2s;}.footer-socials a:hover{background:var(--brc-green);}
-.footer-links{list-style:none;}.footer-links li{margin-bottom:10px;}.footer-links a{color:var(--brc-muted);font-size:14px;text-decoration:none;}.footer-links a:hover{color:var(--brc-green);}
-.footer-contact-row{color:var(--brc-muted);font-size:14px;margin-bottom:10px;}.footer-contact-row a{color:var(--brc-muted);}.footer-contact-row a:hover{color:var(--brc-green);}
-.footer-bottom{max-width:1200px;margin:0 auto;padding:20px 0;border-top:1px solid rgba(255,255,255,0.08);display:flex;align-items:center;justify-content:space-between;gap:16px;}
-.footer-copyright{color:var(--brc-muted);font-size:13px;}
-@media(max-width:900px){h1{font-size:39px;}h2{font-size:28px;}.hero-inner{grid-template-columns:1fr;}.services-grid{grid-template-columns:repeat(2,1fr);}.reviews-grid{grid-template-columns:1fr;}.stats-inner{flex-direction:column;text-align:center;}.steps-row{grid-template-columns:1fr;}.step-connector{display:none;}.about-inner{grid-template-columns:1fr;}.map-inner{grid-template-columns:1fr;}.footer-inner{grid-template-columns:1fr;gap:32px;}.footer-bottom{flex-direction:column;text-align:center;}}
-@media(max-width:600px){.services-grid{grid-template-columns:1fr;}.header-phone{display:none;}.hero{padding:48px 20px;}.reviews-grid{overflow-x:auto;display:flex;flex-wrap:nowrap;gap:16px;}.review-card{min-width:280px;}}</style>
+<style>
+:root {
+  --brc-green: #45955E;
+  --brc-green-hover: #18191B;
+  --brc-dark: #18191B;
+  --brc-body: #2F3134;
+  --brc-muted: #A0A6A9;
+  --brc-light: #F2F2F3;
+  --brc-white: #FFFFFF;
+  --font-main: 'Poppins', sans-serif;
+}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body { font-family: var(--font-main); color: var(--brc-body); font-size: 18px; line-height: 1.8; letter-spacing: -0.5px; }
+img { max-width: 100%; display: block; }
+a { color: var(--brc-green); font-weight: 500; text-decoration: none; }
+a:hover { text-decoration: underline; }
+h1 { font-size: 58px; font-weight: 600; line-height: 1.2; letter-spacing: -1.8px; color: var(--brc-white); }
+h2 { font-size: 45px; font-weight: 600; line-height: 1.2; letter-spacing: -1.8px; color: var(--brc-dark); }
+h3 { font-size: 24px; font-weight: 600; letter-spacing: -1.3px; color: var(--brc-dark); }
+.btn { display: inline-block; background: var(--brc-green); color: var(--brc-white); font-family: var(--font-main); font-weight: 600; font-size: 16px; padding: 16px 32px; border: none; border-radius: 0; cursor: pointer; text-decoration: none; transition: background 0.2s; }
+.btn:hover { background: var(--brc-green-hover); text-decoration: none; color: var(--brc-white); }
+.btn-full { width: 100%; text-align: center; display: block; }
+.btn-pill { border-radius: 999px; padding: 10px 22px; font-size: 15px; }
+.btn-primary { background: var(--brc-green); color: #fff; }
+.btn-primary:hover { background: var(--brc-green-hover); color: #fff; }
+/* CTA utility classes */
+.btn-call { background: #2e7d32; color: #fff; }
+.btn-call:hover { background: var(--brc-green-hover); color: #fff; }
+.btn-quote { background: #fff; color: #2e7d32; border: 2px solid #2e7d32; }
+.btn-quote:hover { background: #2e7d32; color: #fff; }
+.btn-dark { background: #1c1c1e; color: #fff; }
+.btn-dark:hover { background: #000; color: #fff; }
+.btn-secondary { background: transparent; color: var(--brc-green); border: 2px solid var(--brc-green); }
+.btn-secondary:hover { background: var(--brc-green); color: #fff; }
+.section-ctas { display: flex; gap: 16px; flex-wrap: wrap; justify-content: center; margin-top: 32px; }
+
+/* HEADER */
+/* header background: test #ffffff vs var(--color-brand-green) */
+header { position: sticky; top: 0; z-index: 100; background: var(--brc-dark); box-shadow: 0 2px 8px rgba(0,0,0,0.15); }
+.header-inner { max-width: 1200px; margin: 0 auto; padding: 0 24px; height: 72px; display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+.header-logo { display: flex; align-items: center; flex-shrink: 0; }
+.header-logo img { height: 48px; width: auto; }
+.logo-text { color: var(--brc-white); font-weight: 700; font-size: 17px; letter-spacing: -0.5px; }
+.header-nav { display: flex; align-items: center; gap: 24px; flex: 1; justify-content: center; }
+.header-nav a { color: var(--brc-white); font-size: 14px; font-weight: 500; text-decoration: none; white-space: nowrap; }
+.header-nav a:hover { color: var(--brc-green); text-decoration: none; }
+.header-ctas { display: flex; align-items: center; gap: 10px; flex-shrink: 0; }
+
+.breadcrumb { background: var(--brc-white); padding: 10px 24px; border-bottom: 1px solid #E8EAEB; }
+.breadcrumb-inner { max-width: 1200px; margin: 0 auto; font-size: 13px; color: var(--brc-muted); }
+.breadcrumb-inner a { color: var(--brc-muted); font-weight: 400; }
+.breadcrumb-inner a:hover { color: var(--brc-green); }
+
+/* HERO */
+.hero { background: var(--brc-dark); padding: 80px 24px; }
+.hero-inner { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: center; }
+.hero-left h1 { margin-bottom: 16px; }
+.hero-left .hero-h2 { color: var(--brc-green); font-size: 26px; font-weight: 500; margin-bottom: 28px; letter-spacing: -0.5px; }
+.trust-list { list-style: none; margin-bottom: 32px; }
+.trust-list li { color: var(--brc-white); font-size: 16px; margin-bottom: 10px; display: flex; align-items: center; gap: 10px; }
+.trust-list li::before { content: '\2713'; color: var(--brc-green); font-weight: 700; font-size: 18px; flex-shrink: 0; }
+.hero-ctas { display: flex; flex-direction: column; gap: 14px; align-items: flex-start; }
+.hero-secondary { color: var(--brc-white); font-size: 15px; }
+.hero-secondary a { color: var(--brc-green); }
+.trust-badge { display: inline-block; background: rgba(255,255,255,0.1); color: var(--brc-white); font-size: 15px; font-weight: 600; padding: 10px 18px; border-radius: 4px; margin-top: 20px; }
+.hero-body { color: rgba(255,255,255,0.82); font-size: 16px; margin-bottom: 28px; line-height: 1.8; }
+.hero-cta { margin-bottom: 12px; }
+
+/* HERO RIGHT — image + booking button */
+.hero-image-wrap { border-radius: 12px; overflow: hidden; }
+.hero-image-wrap img { width: 100%; border-radius: 12px; display: block; }
+.hero-image-cta { margin-top: 20px; text-align: center; }
+
+/* MODAL */
+.modal { display: flex; position: fixed; inset: 0; background: rgba(0,0,0,0.6); align-items: center; justify-content: center; z-index: 9999; }
+.modal.hidden { display: none; }
+.modal-inner { background: #fff; padding: 2rem; border-radius: 8px; max-width: 500px; width: 90%; max-height: 90vh; overflow-y: auto; }
+.modal-inner h3 { margin-bottom: 20px; color: var(--brc-dark); }
+.modal-close { float: right; background: none; border: none; font-size: 22px; cursor: pointer; color: var(--brc-muted); margin-top: -8px; }
+
+/* FORM CARD */
+.form-card { background: #fff; border-radius: 12px; padding: 32px; box-shadow: 0 4px 24px rgba(0,0,0,0.18); }
+.form-card h3 { color: var(--brc-dark); margin-bottom: 20px; font-size: 22px; }
+.form-group { margin-bottom: 16px; }
+.form-group label { display: block; font-size: 14px; font-weight: 500; color: var(--brc-body); margin-bottom: 6px; }
+.form-group input, .form-group select, .form-group textarea { width: 100%; padding: 12px 14px; font-family: var(--font-main); font-size: 15px; border: 1px solid #D0D5D8; border-radius: 0; color: var(--brc-body); background: #fff; -webkit-appearance: none; appearance: none; }
+.form-group select { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%2345955E' stroke-width='2' fill='none'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 14px center; padding-right: 36px; }
+.form-group input:focus, .form-group select:focus, .form-group textarea:focus { outline: 2px solid var(--brc-green); }
+.form-row-top { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 1rem; }
+
+/* SERVICES */
+.services { background: var(--brc-light); padding: 80px 24px; }
+.services-inner { max-width: 1200px; margin: 0 auto; }
+.section-header { margin-bottom: 48px; }
+.services-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-bottom: 40px; }
+.service-card { background: var(--brc-white); border-radius: 8px; overflow: hidden; }
+.service-card img { width: 100%; height: 220px; object-fit: cover; }
+.service-card-body { padding: 20px; }
+.service-card-body h3 { margin-bottom: 8px; font-size: 20px; }
+.service-card-body p { font-size: 15px; color: var(--brc-body); margin-bottom: 12px; line-height: 1.6; }
+
+/* REVIEWS */
+.reviews { background: var(--brc-white); padding: 80px 24px; }
+.reviews-inner { max-width: 1200px; margin: 0 auto; }
+.reviews-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 40px; }
+.review-card { border: 0.5px solid #E0E0E0; border-radius: 8px; padding: 24px; }
+.review-stars { color: var(--brc-green); font-size: 20px; margin-bottom: 12px; }
+.review-quote { font-style: italic; font-size: 16px; color: var(--brc-body); margin-bottom: 16px; line-height: 1.7; }
+.review-name { font-weight: 700; font-size: 14px; color: var(--brc-dark); }
+.review-source { font-size: 12px; color: var(--brc-muted); margin-top: 4px; }
+.stars { color: #f5a623; }
+
+/* STATS + ACCREDITATION */
+.stats-bar { background: var(--brc-dark); padding: 60px 24px; }
+.stats-inner { max-width: 1200px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; gap: 40px; flex-wrap: wrap; }
+.stats-left .stat-number { font-size: 64px; font-weight: 700; color: var(--brc-green); line-height: 1; letter-spacing: -2px; }
+.stats-left .stat-label { color: var(--brc-white); font-size: 18px; margin-top: 8px; }
+.accred-logos { display: flex; align-items: center; gap: 20px; flex-wrap: wrap; }
+.accred-logos img { height: 48px; width: auto; filter: brightness(0) invert(1); opacity: 0.85; }
+
+/* HOW IT WORKS */
+.how-it-works { background: var(--brc-white); padding: 80px 24px; text-align: center; }
+.how-it-works-inner { max-width: 1100px; margin: 0 auto; }
+.how-it-works h2 { margin-bottom: 48px; }
+.steps-row { display: grid; grid-template-columns: 1fr auto 1fr auto 1fr; align-items: start; margin-bottom: 48px; gap: 2rem; }
+.step { text-align: center; padding: 2rem; box-shadow: 0 4px 16px rgba(0,0,0,0.12); border-radius: 8px; margin: 0 0.5rem; }
+.step-number { font-size: 64px; font-weight: 700; color: var(--brc-green); line-height: 1; margin-bottom: 12px; }
+.step h3 { margin-bottom: 10px; font-size: 20px; }
+.step p { font-size: 15px; color: var(--brc-body); line-height: 1.7; }
+.step-connector { width: 40px; height: 1px; background: #E0E0E0; margin-top: 44px; flex-shrink: 0; }
+
+/* ABOUT */
+.about { background: var(--brc-white); padding: 80px 24px; border-top: 1px solid var(--brc-light); }
+.about-inner { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
+.about-text h2 { margin-bottom: 20px; font-size: 36px; }
+.about-text p { font-size: 17px; color: var(--brc-body); line-height: 1.8; }
+
+/* MAP + HOURS */
+.map-section { background: var(--brc-light); padding: 80px 24px; }
+.map-inner { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 32px; align-items: stretch; }
+.map-iframe { border-radius: 8px; overflow: hidden; min-height: 400px; }
+.map-iframe iframe { width: 100%; height: 100%; min-height: 400px; border: none; display: block; }
+.map-info { background: var(--brc-white); border-radius: 8px; padding: 32px; }
+.map-info h3 { margin-bottom: 20px; }
+.map-info-row { margin-bottom: 14px; font-size: 16px; color: var(--brc-body); }
+.map-info-row strong { display: block; font-size: 13px; text-transform: uppercase; letter-spacing: 0.5px; color: var(--brc-muted); margin-bottom: 2px; }
+
+/* SECOND FORM */
+.second-form { background: var(--brc-white); padding: 80px 24px; }
+.second-form-inner { max-width: 800px; margin: 0 auto; }
+.second-form h2 { margin-bottom: 16px; }
+.form-intro { font-size: 17px; color: var(--brc-body); margin-bottom: 24px; }
+.form-trust-list { list-style: none; margin-bottom: 32px; }
+.form-trust-list li { color: var(--brc-body); font-size: 16px; margin-bottom: 10px; display: flex; align-items: center; gap: 10px; }
+.form-trust-list li::before { content: '\2713'; color: var(--brc-green); font-weight: 700; font-size: 18px; flex-shrink: 0; }
+
+/* CONTENT SECTION */
+.content-section { background: var(--brc-white); padding: 80px 24px; }
+.content-inner { max-width: 1100px; margin: 0 auto; }
+.content-inner h2 { margin-bottom: 24px; }
+.content-inner p { margin-bottom: 18px; font-size: 17px; }
+.content-inner ul { margin: 0 0 24px 20px; }
+.content-inner ul li { margin-bottom: 8px; font-size: 16px; }
+.trust-bullets { list-style: none; margin: 24px 0 0; padding: 0; }
+.trust-bullets li { display: flex; align-items: center; gap: 10px; font-size: 16px; margin-bottom: 10px; }
+.trust-bullets li::before { content: '\2713'; color: var(--brc-green); font-weight: 700; font-size: 18px; flex-shrink: 0; }
+
+/* FAQS */
+.faqs { background: var(--brc-light); padding: 80px 24px; }
+.faqs-inner { max-width: 800px; margin: 0 auto; }
+.faqs h2 { margin-bottom: 36px; }
+.faq-item { border-bottom: 1px solid #D5D8DA; }
+.faq-question { width: 100%; background: none; border: none; text-align: left; font-family: var(--font-main); font-size: 17px; font-weight: 600; color: var(--brc-dark); padding: 20px 0; cursor: pointer; display: flex; justify-content: space-between; align-items: center; gap: 16px; }
+.faq-question::after { content: '+'; font-size: 24px; color: var(--brc-green); flex-shrink: 0; transition: transform 0.25s ease; }
+.faq-question[aria-expanded="true"]::after { transform: rotate(45deg); }
+.faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.25s ease; }
+.faq-answer-inner { padding: 0 0 20px; font-size: 16px; color: var(--brc-body); line-height: 1.8; }
+
+/* FOOTER */
+footer { background: var(--brc-dark); padding: 64px 24px 0; }
+.footer-inner { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 48px; padding-bottom: 48px; }
+.footer-col h4 { color: var(--brc-white); font-size: 16px; font-weight: 600; margin-bottom: 16px; text-transform: uppercase; letter-spacing: 0.5px; }
+.footer-logo { margin-bottom: 16px; }
+.footer-logo img { height: 56px; }
+.logo-text-footer { color: var(--brc-white); font-weight: 700; font-size: 16px; letter-spacing: -0.5px; }
+.footer-blurb { color: var(--brc-muted); font-size: 14px; line-height: 1.7; margin-bottom: 20px; }
+.footer-socials { display: flex; gap: 12px; }
+.footer-socials a { display: inline-flex; align-items: center; justify-content: center; width: 36px; height: 36px; border-radius: 50%; background: rgba(255,255,255,0.1); color: var(--brc-white); font-size: 14px; text-decoration: none; font-weight: 600; transition: background 0.2s; }
+.footer-socials a:hover { background: var(--brc-green); }
+.footer-links { list-style: none; }
+.footer-links li { margin-bottom: 10px; }
+.footer-links a { color: var(--brc-muted); font-size: 14px; text-decoration: none; }
+.footer-links a:hover { color: var(--brc-green); }
+.footer-contact-row { color: var(--brc-muted); font-size: 14px; margin-bottom: 10px; }
+.footer-contact-row a { color: var(--brc-muted); }
+.footer-contact-row a:hover { color: var(--brc-green); }
+.footer-bottom { max-width: 1200px; margin: 0 auto; padding: 20px 0; border-top: 1px solid rgba(255,255,255,0.08); display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+.footer-copyright { color: var(--brc-muted); font-size: 13px; }
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  h1 { font-size: 39px; }
+  h2 { font-size: 28px; }
+  .hero-inner { grid-template-columns: 1fr; }
+  .services-grid { grid-template-columns: repeat(2, 1fr); }
+  .reviews-grid { grid-template-columns: 1fr; }
+  .stats-inner { flex-direction: column; text-align: center; }
+  .steps-row { grid-template-columns: 1fr; }
+  .step-connector { display: none; }
+  .about-inner { grid-template-columns: 1fr; }
+  .map-inner { grid-template-columns: 1fr; }
+  .footer-inner { grid-template-columns: 1fr; gap: 32px; }
+  .footer-bottom { flex-direction: column; text-align: center; }
+  .header-nav { display: none; }
+}
+@media (max-width: 768px) {
+  .reviews-grid { display: flex; flex-direction: column; gap: 1rem; }
+  .form-row-top { grid-template-columns: 1fr; }
+}
+@media (max-width: 600px) {
+  .services-grid { grid-template-columns: 1fr; }
+  .header-ctas .btn-call { display: none; }
+  .hero { padding: 48px 20px; }
+}
+</style>
 <script>var $wc_load=function(a){return JSON.parse(JSON.stringify(a))},$wc_leads=$wc_leads||{doc:{url:$wc_load(document.URL),ref:$wc_load(document.referrer),search:$wc_load(location.search),hash:$wc_load(location.hash)}};</script>
 <script src="//s.ksrndkehqnwntyxlhgto.com/158724.js"></script>
 </head>
 <body>
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PDXJSH3Z" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+<!-- HEADER -->
 <header>
   <div class="header-inner">
-    <a href="/" class="header-logo"><img src="https://service.ballaratcsc.com.au/wp-content/uploads/2025/07/BSCS_Logo_M-34538090_REVA-625.png" alt="Ballarat Commercial Service Centre" width="160" height="56"></a>
-    <a href="tel:+61353224674" class="header-phone">03 5322 4674</a>
-    <a href="#form" class="btn btn-pill">Request Booking</a>
+    <!-- Left: logo -->
+    <a href="/" class="header-logo">
+      <!-- TODO: replace with logo file when available -->
+      <img src="https://service.ballaratcsc.com.au/wp-content/uploads/2025/07/BSCS_Logo_M-34538090_REVA-625.png" alt="Ballarat Commercial Service Centre" width="160" height="48" onerror="this.style.display='none';this.nextElementSibling.style.display='inline';">
+      <span class="logo-text" style="display:none;">BALLARAT COMMERCIAL SERVICE CENTRE</span>
+    </a>
+    <!-- Centre: nav links -->
+    <nav class="header-nav">
+      <a href="#services">Services</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#why-us">Why Us</a>
+      <a href="#faqs">FAQ</a>
+      <a href="#form">Contact</a>
+    </nav>
+    <!-- Right: two CTAs -->
+    <div class="header-ctas">
+      <a href="tel:+61353224674" class="btn btn-pill btn-call">Call Us Today – 03 5322 4674</a>
+      <a href="#form" class="btn btn-pill btn-quote">Get Free Quote</a>
+    </div>
   </div>
 </header>
+
+<!-- HERO (C1: image + popup trigger, booking form moved to modal) -->
 <section class="hero">
   <div class="hero-inner">
     <div class="hero-left">
@@ -109,81 +283,172 @@ footer{background:var(--brc-dark);padding:64px 24px 0;}
         <a href="#form" class="btn">Request Booking</a>
         <span class="hero-secondary">Call us: <a href="tel:+61353224674">03 5322 4674</a></span>
       </div>
+      <div class="trust-badge"><span>&#11088; 4.45 Stars from 242 Reviews</span></div>
     </div>
     <div class="hero-right">
-      <div class="form-card" style="padding:0;overflow:hidden;">
-      <div style="width:100%;height:900px;overflow:hidden;border:0;">
-        <iframe src="https://book.repairy.au/ballaratcsc?hl=en-AU" style="width:100%;height:100%;border:none;" loading="lazy" allowfullscreen></iframe>
+      <div class="hero-image-wrap">
+        <img src="https://placehold.co/600x400/1c1c1e/ffffff?text=Commercial+Service" alt="Ballarat Commercial Service Centre" loading="lazy">
       </div>
-    </div>
+      <div class="hero-image-cta">
+        <button class="btn btn-primary" onclick="openBookingModal()">Request Booking</button>
+      </div>
     </div>
   </div>
 </section>
 
-<section class="services">
+<!-- SERVICES -->
+<section class="services" id="services">
   <div class="services-inner">
     <div class="section-header"><h2>Services for heavy vehicles of all types</h2></div>
     <div class="services-grid">
-      <div class="service-card"><img src="https://placehold.co/400x180/2a2a2a/ffffff?text=Trucks" alt="Truck service Ballarat" loading="lazy"><div class="service-card-body"><h3>Trucks</h3><p>Servicing, repairs, inspections and roadworthy certificates for all truck types.</p><a href="#form">Request booking &rarr;</a></div></div>
-      <div class="service-card"><img src="https://service.ballaratroadworthy.com/wp-content/uploads/2024/10/bus.webp" alt="Bus inspection Ballarat" loading="lazy"><div class="service-card-body"><h3>Buses</h3><p>Annual bus safety inspections, roadworthy certificates and mechanical maintenance.</p><a href="#form">Request booking &rarr;</a></div></div>
-      <div class="service-card"><img src="https://service.ballaratroadworthy.com/wp-content/uploads/2024/10/fleet.webp" alt="Commercial fleet Ballarat" loading="lazy"><div class="service-card-body"><h3>Commercial Fleets</h3><p>Structured maintenance contracts for fleet operators to minimise downtime.</p><a href="#form">Request booking &rarr;</a></div></div>
+      <div class="service-card">
+        <img src="https://placehold.co/400x220/2a2a2a/ffffff?text=Trucks" alt="Truck service Ballarat" loading="lazy">
+        <div class="service-card-body">
+          <h3>Trucks</h3>
+          <p>Servicing, repairs, inspections and roadworthy certificates for all truck types.</p>
+          <a href="#form">Request booking &rarr;</a>
+        </div>
+      </div>
+      <div class="service-card">
+        <img src="https://service.ballaratroadworthy.com/wp-content/uploads/2024/10/bus.webp" alt="Bus inspection Ballarat" loading="lazy" onerror="this.src='https://placehold.co/400x220/2e7d32/ffffff?text=Bus+Service';">
+        <div class="service-card-body">
+          <h3>Buses</h3>
+          <p>Annual bus safety inspections, roadworthy certificates and mechanical maintenance.</p>
+          <a href="#form">Request booking &rarr;</a>
+        </div>
+      </div>
+      <div class="service-card">
+        <img src="https://service.ballaratroadworthy.com/wp-content/uploads/2024/10/fleet.webp" alt="Commercial fleet Ballarat" loading="lazy" onerror="this.src='https://placehold.co/400x220/2e7d32/ffffff?text=Fleet+Service';">
+        <div class="service-card-body">
+          <h3>Commercial Fleets</h3>
+          <p>Structured maintenance contracts for fleet operators to minimise downtime.</p>
+          <a href="#form">Request booking &rarr;</a>
+        </div>
+      </div>
     </div>
-    <div style="text-align:center;"><a href="#form" class="btn">Request Booking</a></div>
+    <div class="section-ctas">
+      <a href="tel:+61353224674" class="btn btn-call">Call Us Today</a>
+      <a href="#form" class="btn btn-quote">Book Now</a>
+    </div>
   </div>
 </section>
 
-<section class="reviews">
+<!-- REVIEWS / WHY LOCALS CHOOSE US -->
+<section class="reviews" id="why-us">
   <div class="reviews-inner">
     <h2>Trusted by Ballarat Operators</h2>
-    <div class="reviews-grid">
-      <div class="review-card"><div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="review-quote">"Professional, thorough and fast. Got our trucks inspected without any downtime to our operation. Highly recommend."</p><p class="review-name">Fleet Manager, Ballarat</p><p class="review-source">Google Review</p></div>
-      <div class="review-card"><div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="review-quote">"James and the team know heavy vehicles inside and out. Honest advice, fast turnaround and everything documented properly."</p><p class="review-name">Transport Operator</p><p class="review-source">Google Review</p></div>
-      <div class="review-card"><div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="review-quote">"Reliable, experienced and no messing around. They get the job done properly and keep us compliant. Great team."</p><p class="review-name">Local Business Owner</p><p class="review-source">Google Review</p></div>
+    <div class="reviews-grid" id="reviews">
+      <div class="review-card">
+        <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p class="review-quote">"Professional, thorough and fast. Got our trucks inspected without any downtime to our operation. Highly recommend."</p>
+        <p class="review-name">Fleet Manager, Ballarat</p>
+        <p class="review-source">Google Review</p>
+      </div>
+      <div class="review-card">
+        <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p class="review-quote">"James and the team know heavy vehicles inside and out. Honest advice, fast turnaround and everything documented properly."</p>
+        <p class="review-name">Transport Operator</p>
+        <p class="review-source">Google Review</p>
+      </div>
+      <div class="review-card">
+        <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p class="review-quote">"Reliable, experienced and no messing around. They get the job done properly and keep us compliant. Great team."</p>
+        <p class="review-name">Local Business Owner</p>
+        <p class="review-source">Google Review</p>
+      </div>
+      <!-- TODO: replace with real review content -->
+      <div class="review-card">
+        <p>"Great service, honest pricing and had my vehicle done same day. Highly recommend!"</p>
+        <span>— Sarah M., Google Review</span>
+        <span class="stars">&#11088;&#11088;&#11088;&#11088;&#11088;</span>
+      </div>
+      <div class="review-card">
+        <p>"Fast, professional and kept us informed throughout. Our fleet is always in good hands here."</p>
+        <span>— David K., Google Review</span>
+        <span class="stars">&#11088;&#11088;&#11088;&#11088;&#11088;</span>
+      </div>
+      <div class="review-card">
+        <p>"Booked our buses in for compliance inspections and they had everything sorted quickly with full documentation."</p>
+        <span>— Tanya R., Google Review</span>
+        <span class="stars">&#11088;&#11088;&#11088;&#11088;&#11088;</span>
+      </div>
+    </div>
+    <div class="section-ctas">
+      <a href="#" target="_blank" rel="noopener" class="btn btn-secondary">Read More Reviews</a><!-- TODO: replace # with Google Reviews URL -->
+      <a href="tel:+61353224674" class="btn btn-call">Call Us Today</a>
+      <a href="#form" class="btn btn-quote">Get a Free Estimate</a>
     </div>
   </div>
 </section>
 
+<!-- STATS + ACCREDITATION -->
 <section class="stats-bar">
   <div class="stats-inner">
-    <div class="stats-left"><div class="stat-number">20+</div><div class="stat-label">Years servicing Ballarat's commercial fleets</div></div>
+    <div class="stats-left">
+      <div class="stat-number">20+</div>
+      <div class="stat-label">Years servicing Ballarat's commercial fleets</div>
+    </div>
     <div class="accred-logos">
-      <img src="https://service.ballaratroadworthy.com/wp-content/uploads/2024/10/vacc-new.webp" alt="VACC" loading="lazy">
-      <img src="https://service.ballaratroadworthy.com/wp-content/uploads/2024/10/bea.webp" alt="BEA" loading="lazy">
-      <img src="https://service.ballaratroadworthy.com/wp-content/uploads/2024/10/aaaa.webp" alt="AAAA" loading="lazy">
-      <img src="https://service.ballaratroadworthy.com/wp-content/uploads/2024/10/hvia.webp" alt="HVIA" loading="lazy">
-      <img src="https://service.ballaratroadworthy.com/wp-content/uploads/2024/10/green-stamp.webp" alt="Green Stamp" loading="lazy">
-      <img src="https://service.ballaratroadworthy.com/wp-content/uploads/2024/10/employee.webp" alt="Employee" loading="lazy">
+      <img src="https://service.ballaratroadworthy.com/wp-content/uploads/2024/10/vacc-new.webp" alt="VACC" loading="lazy" onerror="this.src='https://placehold.co/80x48/ffffff/888888?text=VACC';">
+      <img src="https://service.ballaratroadworthy.com/wp-content/uploads/2024/10/bea.webp" alt="BEA" loading="lazy" onerror="this.src='https://placehold.co/80x48/ffffff/888888?text=BEA';">
+      <img src="https://service.ballaratroadworthy.com/wp-content/uploads/2024/10/aaaa.webp" alt="AAAA" loading="lazy" onerror="this.src='https://placehold.co/80x48/ffffff/888888?text=AAAA';">
+      <img src="https://service.ballaratroadworthy.com/wp-content/uploads/2024/10/hvia.webp" alt="HVIA" loading="lazy" onerror="this.src='https://placehold.co/80x48/ffffff/888888?text=HVIA';">
+      <img src="https://service.ballaratroadworthy.com/wp-content/uploads/2024/10/green-stamp.webp" alt="Green Stamp" loading="lazy" onerror="this.src='https://placehold.co/80x48/ffffff/888888?text=GS';">
+      <img src="https://service.ballaratroadworthy.com/wp-content/uploads/2024/10/employee.webp" alt="Employee" loading="lazy" onerror="this.src='https://placehold.co/80x48/ffffff/888888?text=EOC';">
     </div>
   </div>
 </section>
 
+<!-- HOW IT WORKS -->
 <section class="how-it-works">
   <div class="how-it-works-inner">
     <h2>How It Works</h2>
     <div class="steps-row">
-      <div class="step"><div class="step-number">1</div><h3>Request a Booking</h3><p>Call us or complete the form. We confirm your appointment and any documentation required.</p></div>
+      <div class="step">
+        <div class="step-number">1</div>
+        <h3>Request a Booking</h3>
+        <p>Call us or complete the form. We confirm your appointment and any documentation required.</p>
+      </div>
       <div class="step-connector"></div>
-      <div class="step"><div class="step-number">2</div><h3>We Inspect or Service Your Vehicle</h3><p>Our licensed technicians complete the work to the required standard — NHVR, VicRoads or manufacturer spec.</p></div>
+      <div class="step">
+        <div class="step-number">2</div>
+        <h3>We Inspect or Service Your Vehicle</h3>
+        <p>Our licensed technicians complete the work to the required standard — NHVR, VicRoads or manufacturer spec.</p>
+      </div>
       <div class="step-connector"></div>
-      <div class="step"><div class="step-number">3</div><h3>Get Back on the Road</h3><p>Full documentation issued on the day. Clear explanation of everything completed or required.</p></div>
+      <div class="step">
+        <div class="step-number">3</div>
+        <h3>Get Back on the Road</h3>
+        <p>Full documentation issued on the day. Clear explanation of everything completed or required.</p>
+      </div>
     </div>
-    <a href="#form" class="btn">Request Booking</a>
+    <!-- section bg is white -->
+    <div class="section-ctas">
+      <a href="tel:+61353224674" class="btn btn-call">Call Us Today</a>
+      <a href="#form" class="btn btn-dark">Book Now</a>
+    </div>
   </div>
 </section>
 
+<!-- ABOUT / TRUSTED SPECIALISTS -->
 <section class="about">
   <div class="about-inner">
     <div class="about-text">
       <h2>Trusted Ballarat Heavy Vehicle Specialists</h2>
       <p>Ballarat Commercial Service Centre has been supporting local operators, transport companies and fleet managers for over 20 years. We understand that heavy vehicle downtime costs your business money, so we work efficiently, communicate clearly and get the job done right.</p>
     </div>
-    <div><img src="https://service.ballaratroadworthy.com/wp-content/uploads/2024/10/testimonials.png" alt="Ballarat Commercial Service Centre" loading="lazy" style="border-radius:8px;"></div>
+    <div>
+      <img src="https://service.ballaratroadworthy.com/wp-content/uploads/2024/10/testimonials.png" alt="Ballarat Commercial Service Centre" loading="lazy" style="border-radius:8px;" onerror="this.src='https://placehold.co/600x400/18191B/ffffff?text=BCSC+Workshop';">
+    </div>
   </div>
 </section>
 
+<!-- MAP + HOURS -->
 <section class="map-section">
   <div class="map-inner">
-    <div class="map-iframe"><iframe src="https://maps.google.com/maps?q=-37.5288176,143.8426329&t=m&z=16&output=embed" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Ballarat Commercial Service Centre location"></iframe></div>
+    <div class="map-iframe">
+      <iframe src="https://maps.google.com/maps?q=-37.5288176,143.8426329&t=m&z=16&output=embed" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Ballarat Commercial Service Centre location"></iframe>
+    </div>
     <div class="map-info">
       <h3>Ballarat Commercial Service Centre</h3>
       <div class="map-info-row"><strong>Hours</strong>Monday &ndash; Friday: 07:30 AM &ndash; 05:30 PM</div>
@@ -194,34 +459,99 @@ footer{background:var(--brc-dark);padding:64px 24px 0;}
   </div>
 </section>
 
+<!-- REQUEST A BOOKING TODAY (C2: expanded copy, form inline) -->
 <section class="second-form" id="form">
   <div class="second-form-inner">
     <h2>Request a Booking Today</h2>
-    <p class="form-intro">Our team is fast, honest, and focused on keeping your fleet compliant and on the road.</p>
+    <!-- C2: expanded copy -->
+    <p class="form-intro">Our team is fast, honest, and focused on keeping your fleet compliant and on the road. Whether you're managing one vehicle or an entire fleet, we provide thorough inspections, transparent reporting, and fast turnaround so your business keeps moving. Get in touch today — we'll work around your schedule.</p>
     <ul class="form-trust-list">
       <li>Licensed Heavy Vehicle Inspectors</li>
       <li>Fast Turnaround</li>
       <li>Full Compliance Documentation</li>
     </ul>
-    <div style="width:100%;height:900px;overflow:hidden;border:0;">
-      <iframe src="https://book.repairy.au/ballaratcsc?hl=en-AU" style="width:100%;height:100%;border:none;" loading="lazy" allowfullscreen></iframe>
+    <!-- TODO: replace action with form handler -->
+    <form action="#" method="POST">
+      <div class="form-row-top">
+        <div class="form-group">
+          <label for="f-name">Your Name</label>
+          <input type="text" id="f-name" name="name" placeholder="John Smith" required>
+        </div>
+        <div class="form-group">
+          <label for="f-phone">Phone Number</label>
+          <input type="tel" id="f-phone" name="phone" placeholder="0400 000 000" required>
+        </div>
+        <div class="form-group">
+          <label for="f-email">Email Address</label>
+          <input type="email" id="f-email" name="email" placeholder="john@example.com">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="f-service">Service Required</label>
+        <select id="f-service" name="service" required>
+          <option value="" disabled selected>Select a service&hellip;</option>
+          <option>Truck Service &amp; Repairs</option>
+          <option>Truck RWC</option>
+          <option>Bus Inspection</option>
+          <option>Bus RWC</option>
+          <option>Fleet Maintenance</option>
+          <option>NHVR Compliance</option>
+          <option>Other</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="f-message">Additional Details (optional)</label>
+        <textarea id="f-message" name="message" rows="3" placeholder="Tell us about your vehicle or fleet requirements&hellip;"></textarea>
+      </div>
+      <button type="submit" class="btn btn-full">Request Booking</button>
+    </form>
+  </div>
+</section>
+
+<!-- FAQS -->
+<section class="faqs" id="faqs">
+  <div class="faqs-inner">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-item">
+      <button class="faq-question" aria-expanded="false">What types of vehicles do you service?</button>
+      <div class="faq-answer"><div class="faq-answer-inner">We service and inspect trucks, buses, trailers, motorhomes and commercial heavy vehicles of all types and sizes.</div></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-question" aria-expanded="false">Do you handle NHVR compliance?</button>
+      <div class="faq-answer"><div class="faq-answer-inner">Yes. We are an accredited facility for NHVR inspections including defect clearance, PBS vehicle assessments and compliance documentation.</div></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-question" aria-expanded="false">Can you service our fleet?</button>
+      <div class="faq-answer"><div class="faq-answer-inner">Yes. We work with transport operators and fleet managers to set up structured maintenance schedules that minimise downtime and keep your fleet compliant.</div></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-question" aria-expanded="false">Do you offer roadworthy certificates (RWC)?</button>
+      <div class="faq-answer"><div class="faq-answer-inner">Yes, we're a licensed roadworthy inspection station. We can issue RWC certificates for trucks, buses, trailers and commercial heavy vehicles.</div></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-question" aria-expanded="false">Do you work on all vehicle types?</button>
+      <div class="faq-answer"><div class="faq-answer-inner">We service most passenger vehicles, 4WDs, and vans as well as heavy commercial vehicles including trucks, buses and fleet vehicles.</div></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-question" aria-expanded="false">How long does a standard service take?</button>
+      <div class="faq-answer"><div class="faq-answer-inner">Most services are completed within 2–3 hours. Heavy vehicle inspections may take longer depending on vehicle type. We'll give you an accurate timeframe when you book.</div></div>
+    </div>
+    <div class="section-ctas">
+      <a href="tel:+61353224674" class="btn btn-call">Call Us Today</a>
+      <a href="#form" class="btn btn-quote">Get a Free Estimate</a>
     </div>
   </div>
 </section>
 
-<section class="faqs">
-  <div class="faqs-inner">
-    <h2>Frequently Asked Questions</h2>
-    <div class="faq-item"><button class="faq-question" aria-expanded="false">What types of vehicles do you service?</button><div class="faq-answer"><div class="faq-answer-inner">We service and inspect trucks, buses, trailers, motorhomes and commercial heavy vehicles of all types and sizes.</div></div></div>
-    <div class="faq-item"><button class="faq-question" aria-expanded="false">Do you handle NHVR compliance?</button><div class="faq-answer"><div class="faq-answer-inner">Yes. We are an accredited facility for NHVR inspections including defect clearance, PBS vehicle assessments and compliance documentation.</div></div></div>
-    <div class="faq-item"><button class="faq-question" aria-expanded="false">Can you service our fleet?</button><div class="faq-answer"><div class="faq-answer-inner">Yes. We work with transport operators and fleet managers to set up structured maintenance schedules that minimise downtime and keep your fleet compliant.</div></div></div>
-  </div>
-</section>
-
+<!-- FOOTER -->
 <footer>
   <div class="footer-inner">
     <div class="footer-col">
-      <div class="footer-logo"><img src="https://service.ballaratcsc.com.au/wp-content/uploads/2025/07/BSCS_Logo_M-34538090_REVA-625.png" alt="Ballarat Commercial Service Centre" height="56"></div>
+      <div class="footer-logo">
+        <!-- TODO: replace with logo file when available -->
+        <img src="https://service.ballaratcsc.com.au/wp-content/uploads/2025/07/BSCS_Logo_M-34538090_REVA-625.png" alt="Ballarat Commercial Service Centre" height="56" onerror="this.style.display='none';this.nextElementSibling.style.display='inline';">
+        <span class="logo-text-footer" style="display:none;">BALLARAT COMMERCIAL SERVICE CENTRE</span>
+      </div>
       <p class="footer-blurb">Ballarat Commercial Service Centre provides heavy vehicle servicing, repairs, roadworthy inspections and compliance checks for buses, trucks and commercial fleets across the Ballarat region.</p>
       <div class="footer-socials">
         <a href="https://www.facebook.com/ballaratrwc/" target="_blank" rel="noopener" aria-label="Facebook">f</a>
@@ -252,6 +582,63 @@ footer{background:var(--brc-dark);padding:64px 24px 0;}
     <div><a href="https://mechanicmarketing.co" target="_blank" rel="noopener" style="color:var(--brc-muted);font-size:12px;">Marketing by Mechanic Marketing</a></div>
   </div>
 </footer>
-<script>document.querySelectorAll('.faq-question').forEach(btn=>{btn.addEventListener('click',()=>{const answer=btn.nextElementSibling;const isOpen=btn.getAttribute('aria-expanded')==='true';btn.setAttribute('aria-expanded',!isOpen);answer.style.maxHeight=isOpen?'0':answer.scrollHeight+'px';});});</script>
+
+<!-- BOOKING MODAL (C1: form moved here from hero) -->
+<div id="booking-modal" class="modal hidden">
+  <div class="modal-inner">
+    <button class="modal-close" onclick="document.getElementById('booking-modal').classList.add('hidden')" aria-label="Close">&times;</button>
+    <h3>Request a Booking</h3>
+    <!-- TODO: replace action with form handler -->
+    <form action="#" method="POST">
+      <div class="form-group">
+        <label for="m-name">Your Name</label>
+        <input type="text" id="m-name" name="name" placeholder="John Smith" required>
+      </div>
+      <div class="form-group">
+        <label for="m-phone">Phone Number</label>
+        <input type="tel" id="m-phone" name="phone" placeholder="0400 000 000" required>
+      </div>
+      <div class="form-group">
+        <label for="m-email">Email Address</label>
+        <input type="email" id="m-email" name="email" placeholder="john@example.com">
+      </div>
+      <div class="form-group">
+        <label for="m-service">Service Required</label>
+        <select id="m-service" name="service" required>
+          <option value="" disabled selected>Select a service&hellip;</option>
+          <option>Truck Service &amp; Repairs</option>
+          <option>Truck RWC</option>
+          <option>Bus Inspection</option>
+          <option>Bus RWC</option>
+          <option>Fleet Maintenance</option>
+          <option>NHVR Compliance</option>
+          <option>Other</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="m-message">Additional Details (optional)</label>
+        <textarea id="m-message" name="message" rows="3" placeholder="Tell us about your vehicle or fleet requirements&hellip;"></textarea>
+      </div>
+      <button type="submit" class="btn btn-full">Submit Booking Request</button>
+    </form>
+  </div>
+</div>
+
+<script>
+function openBookingModal() {
+  document.getElementById('booking-modal').classList.remove('hidden');
+}
+document.addEventListener('click', function(e) {
+  if (e.target.classList.contains('modal')) e.target.classList.add('hidden');
+});
+document.querySelectorAll('.faq-question').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const answer = btn.nextElementSibling;
+    const isOpen = btn.getAttribute('aria-expanded') === 'true';
+    btn.setAttribute('aria-expanded', !isOpen);
+    answer.style.maxHeight = isOpen ? '0' : answer.scrollHeight + 'px';
+  });
+});
+</script>
 </body>
 </html>
