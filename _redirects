@@ -1,0 +1,11 @@
+# WordPress → Static redirects
+# Paths that exist in the WP sitemap but have no matching static page
+
+/home/                  /                               301
+/privacy-policy-2/      /privacy-policy/                301
+/hello-world/           /                               301
+/hello-world-2/         /                               301
+/category/uncategorized/ /                              301
+
+# Catch-all
+/*                      /                               301
