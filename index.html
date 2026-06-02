@@ -72,14 +72,14 @@
       <p>We'll get back to you fast.</p>
       <form id="booking-form" novalidate>
       <div class="form-row-3">
-        <div class="field"><label>Name</label><input type="text" placeholder="Jane Smith"></div>
-        <div class="field"><label>Phone</label><input type="tel" placeholder="0400 000 000"></div>
-        <div class="field"><label>Email</label><input type="email" placeholder="you@email.com"></div>
+        <div class="field"><label>Name</label><input type="text" name="name" placeholder="Jane Smith"></div>
+        <div class="field"><label>Phone</label><input type="tel" name="phone" placeholder="0400 000 000"></div>
+        <div class="field"><label>Email</label><input type="email" name="email" placeholder="you@email.com"></div>
       </div>
       <div class="field"><label>Service required</label>
-        <select><option>Select a service…</option><option>Truck servicing</option><option>Bus inspection</option><option>Fleet maintenance</option><option>Heavy vehicle roadworthy</option><option>Repairs</option><option>Other</option></select>
+        <select name="service"><option>Select a service…</option><option>Truck servicing</option><option>Bus inspection</option><option>Fleet maintenance</option><option>Heavy vehicle roadworthy</option><option>Repairs</option><option>Other</option></select>
       </div>
-      <div class="field"><label>Notes</label><textarea rows="2" placeholder="Tell us about your vehicle…"></textarea></div>
+      <div class="field"><label>Notes</label><textarea name="notes" rows="2" placeholder="Tell us about your vehicle…"></textarea></div>
       <button type="submit" class="btn btn-call">Send my request →</button>
       <p class="form-reassure">No obligation. We'll only use your details to reply.</p>
       </form>
