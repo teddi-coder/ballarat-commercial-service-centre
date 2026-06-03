@@ -21,7 +21,7 @@
 <header>
   <div class="wrap hdr">
     <a href="../">
-      <img src="../images/white-logo.svg" alt="Ballarat Commercial Service Centre" class="brand-logo">
+      <img src="../images/BSCS_Logo_white.webp" alt="Ballarat Commercial Service Centre" class="brand-logo">
     </a>
     <div class="hdr-cta">
       <a href="tel:+61353224674" class="btn btn-call">Call 03 5322 4674</a>
@@ -92,14 +92,16 @@
     <div class="quote-card reveal">
       <h3>Request a quote</h3>
       <p>We'll get back to you fast.</p>
+      <form id="booking-form" novalidate>
       <div class="form-row-3">
-        <div class="field"><label>Name</label><input type="text" placeholder="Jane Smith"></div>
-        <div class="field"><label>Phone</label><input type="tel" placeholder="0400 000 000"></div>
-        <div class="field"><label>Email</label><input type="email" placeholder="you@email.com"></div>
+        <div class="field"><label>Name</label><input type="text" name="name" placeholder="Jane Smith"></div>
+        <div class="field"><label>Phone</label><input type="tel" name="phone" placeholder="0400 000 000"></div>
+        <div class="field"><label>Email</label><input type="email" name="email" placeholder="you@email.com"></div>
       </div>
-      <div class="field"><label>Notes</label><textarea rows="3" placeholder="Tell us about your vehicle and what service you need..."></textarea></div>
-      <a href="#" class="btn btn-call">Send my request &rarr;</a>
+      <div class="field"><label>Notes</label><textarea name="notes" rows="3" placeholder="Tell us about your vehicle and what service you need..."></textarea></div>
+      <button type="submit" class="btn btn-call">Send my request &rarr;</button>
       <p class="form-reassure">No obligation. We'll only use your details to reply.</p>
+      </form>
     </div>
   </div>
 </section>
@@ -191,7 +193,7 @@
   <div class="wrap">
     <div class="ft-grid">
       <div class="ft-brand">
-        <img src="../images/white-logo.svg" alt="Ballarat Commercial Service Centre" style="height:38px;width:auto;filter:brightness(0) invert(1);margin-bottom:14px">
+        <img src="../images/BSCS_Logo_white.webp" alt="Ballarat Commercial Service Centre" style="height:38px;width:auto;margin-bottom:14px">
         <p>Heavy vehicle servicing, repairs and inspections for Ballarat fleets for over 20 years.</p>
       </div>
       <div><h4>Services</h4><ul>
@@ -234,6 +236,28 @@ document.querySelectorAll('.faq-q').forEach(b=>{
 });
 const io=new IntersectionObserver((es)=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}}),{threshold:.12});
 document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+
+(function() {
+  'use strict';
+  var form = document.getElementById('booking-form');
+  if (!form) return;
+
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    // WhatConverts — fire immediately on submit, before anything else
+    try {
+      if (typeof window.wc_capture_form === 'function') {
+        window.wc_capture_form(form);
+      }
+    } catch (wcErr) {
+      console.warn('WhatConverts capture failed:', wcErr);
+    }
+
+    // Show success message
+    form.innerHTML = '<p style="padding:1rem 0;font-weight:600;">Thanks! We\'ll be in touch shortly.</p>';
+  });
+}());
 </script>
 </body>
 </html>
