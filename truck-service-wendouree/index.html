@@ -4,12 +4,11 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Truck Servicing &amp; Fleet Maintenance in Wendouree | Ballarat Commercial Service Centre</title>
-<meta name="description" content="Ballarat's dedicated commercial vehicle workshop. Truck servicing, heavy vehicle compliance, fleet maintenance &amp; NHVR inspections — Wendouree. Call 03 XXXX XXXX.">
+<meta name="description" content="Ballarat's dedicated commercial vehicle workshop. Truck servicing, heavy vehicle compliance, fleet maintenance &amp; NHVR inspections — Wendouree. Call 03 5322 4674.">
 <link rel="canonical" href="<!-- CONFIRM BCSC DOMAIN -->/truck-service-wendouree/">
 <meta property="og:title" content="Truck Servicing &amp; Fleet Maintenance in Wendouree | Ballarat Commercial Service Centre">
 <meta property="og:description" content="Ballarat's dedicated commercial vehicle workshop. Truck servicing, heavy vehicle compliance, fleet maintenance &amp; NHVR inspections — Wendouree.">
 <meta property="og:type" content="website">
-<meta property="og:url" content="<!-- CONFIRM BCSC DOMAIN -->/truck-service-wendouree/">
 <link rel="icon" type="image/png" href="../favicon.png">
 <link rel="apple-touch-icon" href="../favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,41 +20,32 @@
 <script>var $wc_load=function(a){return JSON.parse(JSON.stringify(a))},$wc_leads=$wc_leads||{doc:{url:$wc_load(document.URL),ref:$wc_load(document.referrer),search:$wc_load(location.search),hash:$wc_load(location.hash)}};</script>
 <script src="//s.ksrndkehqnwntyxlhgto.com/158724.js" defer></script>
 
-<!-- LocalBusiness schema -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "AutoRepair",
   "name": "Ballarat Commercial Service Centre",
   "url": "<!-- CONFIRM BCSC DOMAIN -->",
-  "telephone": "<!-- CONFIRM PHONE -->",
+  "telephone": "+61353224674",
   "address": {
     "@type": "PostalAddress",
-    "streetAddress": "<!-- CONFIRM -->",
+    "streetAddress": "354 Dowling St",
     "addressLocality": "Wendouree",
     "addressRegion": "VIC",
     "postalCode": "3355",
     "addressCountry": "AU"
   },
-  "openingHours": "<!-- CONFIRM TRADING HOURS -->",
+  "openingHours": "Mo-Fr 07:30-17:30",
   "areaServed": ["Wendouree","Ballarat","Sebastopol","Delacombe"]
 }
 </script>
 
 <style>
 /* ============================================================
-   BCSC WENDOUREE LP — CSS VARIABLE OVERRIDES
-   MM brand palette — no custom client colour for BCSC
+   BCSC WENDOUREE LP — page-specific styles only
+   Brand colours come from ../styles.css — no overrides here
    ============================================================ */
-:root {
-  --green: #FF3D02;
-  --green-dk: #d63000;
-  --green-bright: #ff5c2b;
-  --paper: #F0F0EC;
-  --body: 'Inter', 'Helvetica Neue', Arial, sans-serif;
-}
 
-/* Page-specific: icon service cards */
 .lp-services-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -76,7 +66,7 @@
   flex-shrink: 0;
   width: 44px;
   height: 44px;
-  background: rgba(255,61,2,.1);
+  background: rgba(31,157,85,.12);
   border-radius: 10px;
   display: flex;
   align-items: center;
@@ -93,13 +83,11 @@
   line-height: 1.2;
 }
 .lp-svc-card p {
-  font-family: var(--body);
   font-size: .9rem;
   color: var(--muted);
   line-height: 1.5;
 }
 
-/* USP cards */
 .lp-usp-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -112,7 +100,6 @@
   border-top: 4px solid var(--green);
   border-radius: 8px;
   padding: 28px 22px;
-  color: #fff;
 }
 .lp-usp-card h4 {
   font-family: var(--display);
@@ -124,13 +111,11 @@
   letter-spacing: .02em;
 }
 .lp-usp-card p {
-  font-family: var(--body);
   font-size: .93rem;
   color: rgba(255,255,255,.8);
   line-height: 1.6;
 }
 
-/* Testimonials */
 .lp-reviews-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -148,7 +133,6 @@
 }
 .lp-review-stars { color: var(--star); font-size: 1rem; letter-spacing: 2px; }
 .lp-review-text {
-  font-family: var(--body);
   font-size: .94rem;
   color: var(--ink);
   line-height: 1.65;
@@ -156,13 +140,11 @@
   flex: 1;
 }
 .lp-review-author {
-  font-family: var(--body);
   font-size: .84rem;
   font-weight: 600;
   color: var(--steel);
 }
 
-/* Suburb tag cloud */
 .lp-suburb-cloud {
   display: flex;
   flex-wrap: wrap;
@@ -182,7 +164,6 @@
   text-transform: uppercase;
 }
 
-/* Hero trust signal */
 .lp-trust-signal {
   display: flex;
   flex-wrap: wrap;
@@ -200,7 +181,6 @@
   color: var(--green-bright);
 }
 
-/* Mobile CTA bar */
 .lp-mobile-cta {
   display: none;
   position: fixed;
@@ -221,6 +201,7 @@
   text-transform: uppercase;
   letter-spacing: .04em;
 }
+
 @media (max-width: 768px) {
   .lp-mobile-cta { display: block; }
   body { padding-bottom: 60px; }
@@ -229,7 +210,7 @@
   .lp-reviews-grid { grid-template-columns: 1fr; }
   .lp-svc-card { flex-direction: column; gap: 10px; }
 }
-@media (max-width: 1024px) {
+@media (min-width: 769px) and (max-width: 1024px) {
   .lp-services-grid { grid-template-columns: repeat(2, 1fr); }
   .lp-usp-grid { grid-template-columns: repeat(2, 1fr); }
   .lp-reviews-grid { grid-template-columns: 1fr; }
@@ -239,14 +220,13 @@
 
 <body>
 
-<!-- Mobile CTA bar — always visible on mobile above the fold -->
+<!-- Mobile sticky CTA — visible without scrolling at 375px -->
 <div class="lp-mobile-cta" id="lpMobileCta">
-  <!-- WC swaps this display number dynamically -->
-  <a href="tel:+61353224674">Call Now — 03 XXXX XXXX <!-- CONFIRM PHONE --></a>
+  <a href="tel:+61353224674">Call Now — 03 5322 4674</a>
 </div>
 
 <!-- ============================================================
-     HEADER
+     HEADER — existing BCSC header
      ============================================================ -->
 <header>
   <div class="wrap hdr">
@@ -254,8 +234,8 @@
       <img src="../images/BSCS_Logo_white.webp" alt="Ballarat Commercial Service Centre" class="brand-logo">
     </a>
     <div class="hdr-cta">
-      <!-- WC swaps display number; real number stays in href -->
-      <a href="tel:+61353224674" class="btn btn-call">Call 03 XXXX XXXX <!-- CONFIRM PHONE --></a>
+      <a href="tel:+61353224674" class="btn btn-call">Call 03 5322 4674</a>
+      <a href="#quote" class="btn btn-secondary">Get Free Quote</a>
     </div>
   </div>
 </header>
@@ -263,7 +243,7 @@
 
 <!-- ============================================================
      SECTION 1 — HERO
-     DO NOT mention roadworthy certificates, light vehicles, or cars
+     No cars, light vehicles, or roadworthy certificates here
      ============================================================ -->
 <section class="hero" id="top">
   <div class="wrap hero-grid">
@@ -271,10 +251,11 @@
       <h1>Ballarat's Commercial Vehicle Service Centre</h1>
       <p class="sub">Truck servicing, fleet maintenance, heavy vehicle compliance &amp; NHVR inspections — Wendouree</p>
       <div class="cta-row" style="margin-top:24px;">
-        <a href="tel:+61353224674" class="btn btn-call" style="font-size:1.1rem;padding:16px 28px;">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:18px;height:18px;"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8a19.79 19.79 0 01-3.07-8.68A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg>
-          Call 03 XXXX XXXX <!-- CONFIRM PHONE -->
+        <a href="tel:+61353224674" class="btn btn-call">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:17px;height:17px;"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8a19.79 19.79 0 01-3.07-8.68A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg>
+          Call 03 5322 4674
         </a>
+        <a href="#quote" class="btn btn-outline">Get a Quote</a>
       </div>
       <div class="lp-trust-signal">
         <span>NHVR-authorised</span>
@@ -285,12 +266,11 @@
 
     <div class="hero-media">
       <!-- REPLACE WITH REAL PHOTOGRAPHY -->
-      <div style="background:#000;height:400px;border-radius:18px;display:flex;align-items:center;justify-content:center;">
-        <span style="color:rgba(255,255,255,.3);font-family:var(--display);font-size:.9rem;letter-spacing:.1em;text-transform:uppercase;"><!-- REPLACE WITH REAL PHOTOGRAPHY --></span>
+      <div style="background:#1d2329;height:380px;border-radius:18px;display:flex;align-items:center;justify-content:center;margin-bottom:20px;">
+        <span style="color:rgba(255,255,255,.25);font-family:var(--display);font-size:.85rem;letter-spacing:.12em;text-transform:uppercase;"><!-- REPLACE WITH REAL PHOTOGRAPHY --></span>
       </div>
 
-      <!-- Hero form — side by side on desktop, stacked on mobile -->
-      <div class="quote-card" id="quote" style="margin-top:20px;">
+      <div class="quote-card" id="quote">
         <h3>Get a Fleet Servicing Quote</h3>
         <p>Fill in your details and we'll be in touch within 2 hours.</p>
         <form id="contact-form" novalidate>
@@ -326,8 +306,8 @@
             <label for="message">Message <span style="color:var(--muted);font-weight:400;">(optional)</span></label>
             <textarea id="message" name="message" rows="3" placeholder="Tell us about your fleet or servicing needs..."></textarea>
           </div>
-          <button type="submit" class="btn btn-call" style="width:100%;justify-content:center;margin-top:4px;" onclick="wc_capture_form && wc_capture_form(this.form)">Get a Quote</button>
-          <p style="font-size:.78rem;color:var(--muted);text-align:center;margin-top:8px;">We'll call you back within 2 hours</p>
+          <button type="submit" class="btn btn-call" style="width:100%;justify-content:center;" onclick="typeof wc_capture_form !== 'undefined' && wc_capture_form(this.form)">Get a Quote</button>
+          <p class="form-reassure">We'll call you back within 2 hours</p>
         </form>
       </div>
     </div>
@@ -337,7 +317,6 @@
 
 <!-- ============================================================
      SECTION 2 — SERVICES OVERVIEW
-     No mention of cars, light vehicles, or roadworthy certificates
      ============================================================ -->
 <section class="pad band-light" id="services">
   <div class="wrap">
@@ -354,17 +333,17 @@
         </div>
         <div>
           <h4>Truck Servicing &amp; Maintenance</h4>
-          <p>Scheduled and unscheduled servicing for all truck makes and models. Keep your vehicle on the road.</p>
+          <p>Scheduled and unscheduled servicing for all truck makes and models.</p>
         </div>
       </div>
 
       <div class="lp-svc-card">
         <div class="lp-svc-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/><path d="M8 14h.01M12 14h.01M16 14h.01M8 18h.01M12 18h.01M16 18h.01"/></svg>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
         </div>
         <div>
           <h4>Fleet Maintenance Programs</h4>
-          <p>Scheduled maintenance contracts that reduce downtime and keep your whole fleet running.</p>
+          <p>Scheduled contracts that reduce downtime and keep your whole fleet running.</p>
         </div>
       </div>
 
@@ -374,7 +353,7 @@
         </div>
         <div>
           <h4>Heavy Vehicle Compliance</h4>
-          <p>Full compliance servicing for heavy vehicles. Keep your operators on the right side of the law.</p>
+          <p>Full compliance servicing to keep your operators on the right side of the law.</p>
         </div>
       </div>
 
@@ -384,33 +363,33 @@
         </div>
         <div>
           <h4>NHVR-Authorised Inspections</h4>
-          <p>Compliance inspections done right, on time. Keep your vehicles on the road and out of trouble.</p>
+          <p>Compliance inspections done right, on time. Keep your vehicles on the road.</p>
         </div>
       </div>
 
       <div class="lp-svc-card">
         <div class="lp-svc-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2a10 10 0 100 20A10 10 0 0012 2z"/><path d="M12 6v6l4 2"/></svg>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
         </div>
         <div>
           <h4>Diesel Engine Repairs</h4>
-          <p>Our technicians specialise in diesel engines. We don't generalise — we go deep.</p>
+          <p>Specialist diesel technicians. We don't generalise — we go deep.</p>
         </div>
       </div>
 
       <div class="lp-svc-card">
         <div class="lp-svc-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/><path d="M8 11h6M11 8v6"/></svg>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
         </div>
         <div>
           <h4>Pre-Purchase Truck Inspections</h4>
-          <p>Buying a used truck or prime mover? Get an independent inspection before you commit.</p>
+          <p>Buying a used truck? Get an independent inspection before you commit.</p>
         </div>
       </div>
 
     </div>
     <div class="cta-row center" style="margin-top:36px;">
-      <a href="tel:+61353224674" class="btn btn-call">Call 03 XXXX XXXX <!-- CONFIRM PHONE --></a>
+      <a href="tel:+61353224674" class="btn btn-call">Call 03 5322 4674</a>
       <a href="#contact-form-bottom" class="btn btn-onlight">Get a Fleet Quote</a>
     </div>
   </div>
@@ -420,29 +399,25 @@
 <!-- ============================================================
      SECTION 3 — WHY CHOOSE BCSC
      ============================================================ -->
-<section class="pad" style="background:var(--ink);color:#fff;">
+<section class="pad" style="background:var(--ink);">
   <div class="wrap">
     <div class="center">
-      <div class="eyebrow" style="color:var(--green);">Why choose us</div>
+      <div class="eyebrow" style="color:var(--green-bright);">Why choose us</div>
       <h2 class="section-title" style="color:#fff;">Why Fleet Operators Choose Us</h2>
     </div>
     <div class="lp-usp-grid">
-
       <div class="lp-usp-card">
         <h4>NHVR-Authorised</h4>
         <p>Compliance inspections done right, on time. Keep your vehicles on the road and out of trouble.</p>
       </div>
-
       <div class="lp-usp-card">
         <h4>Fleet Programs</h4>
         <p>Scheduled maintenance contracts that reduce downtime and keep your whole fleet running.</p>
       </div>
-
       <div class="lp-usp-card">
         <h4>Diesel Expertise</h4>
         <p>Our technicians specialise in diesel engines. We don't generalise — we go deep.</p>
       </div>
-
     </div>
   </div>
 </section>
@@ -458,9 +433,9 @@
       <h2 class="section-title">Trusted by Ballarat Fleet Operators</h2>
       <!-- PLACEHOLDER — verify against live GBP rating -->
       <div style="display:inline-flex;align-items:center;gap:8px;background:#fff;border-radius:50px;padding:8px 18px;margin-top:12px;box-shadow:0 4px 12px -4px rgba(20,24,28,.1);">
-        <span style="color:var(--star);font-size:1rem;letter-spacing:2px;">★★★★★</span>
-        <span style="font-family:var(--display);font-weight:800;font-size:1.05rem;">4.9</span>
-        <span style="font-family:var(--body);font-size:.88rem;color:var(--muted);">Google Rating <!-- PLACEHOLDER — verify against live GBP rating --></span>
+        <span style="color:var(--star);letter-spacing:2px;">★★★★★</span>
+        <strong style="font-family:var(--display);font-size:1.05rem;">4.9</strong>
+        <span style="font-size:.88rem;color:var(--muted);">Google Rating <!-- PLACEHOLDER — verify against live GBP rating --></span>
       </div>
     </div>
     <div class="lp-reviews-grid">
@@ -494,9 +469,9 @@
 <!-- ============================================================
      SECTION 5 — SERVICE AREA
      ============================================================ -->
-<section class="pad" style="background:var(--ink-2);color:#fff;">
+<section class="pad" style="background:var(--ink-2);">
   <div class="wrap">
-    <div class="eyebrow" style="color:var(--green);">Service area</div>
+    <div class="eyebrow" style="color:var(--green-bright);">Service area</div>
     <h2 class="section-title" style="color:#fff;">Servicing Ballarat's Commercial Operators</h2>
     <p style="color:rgba(255,255,255,.7);margin-top:10px;max-width:560px;">Located in Wendouree — easy access for trucks and heavy vehicles.</p>
     <div class="lp-suburb-cloud">
@@ -516,14 +491,14 @@
 
 
 <!-- ============================================================
-     SECTION 6 — SECONDARY CTA
+     SECTION 6 — SECONDARY CTA / REPEAT FORM
      ============================================================ -->
 <section class="pad" style="background:var(--paper);" id="contact-form-bottom">
   <div class="wrap" style="max-width:680px;">
     <div class="center" style="margin-bottom:32px;">
       <div class="eyebrow">Request a quote</div>
       <h2 class="section-title">Get a Fleet Servicing Quote</h2>
-      <p style="color:var(--muted);margin-top:10px;">Call 03 XXXX XXXX <!-- CONFIRM PHONE --> or fill in your details and we'll come back to you within 2 hours.</p>
+      <p style="color:var(--muted);margin-top:10px;">Call <a href="tel:+61353224674" style="color:var(--green);font-weight:600;">03 5322 4674</a> or fill in your details and we'll come back to you within 2 hours.</p>
     </div>
     <div class="quote-card">
       <form id="contact-form-2" novalidate>
@@ -561,7 +536,7 @@
           <label for="message2">Message <span style="color:var(--muted);font-weight:400;">(optional)</span></label>
           <textarea id="message2" name="message" rows="3" placeholder="Tell us about your fleet or servicing needs..."></textarea>
         </div>
-        <button type="submit" class="btn btn-call" style="width:100%;justify-content:center;margin-top:4px;" onclick="wc_capture_form && wc_capture_form(this.form)">Get a Quote</button>
+        <button type="submit" class="btn btn-call" style="width:100%;justify-content:center;" onclick="typeof wc_capture_form !== 'undefined' && wc_capture_form(this.form)">Get a Quote</button>
         <p class="form-reassure">We'll call you back within 2 hours during business hours</p>
       </form>
     </div>
@@ -570,44 +545,46 @@
 
 
 <!-- ============================================================
-     SECTION 7 — FOOTER
+     FOOTER — existing BCSC footer (paths adjusted for subdirectory)
      ============================================================ -->
-<footer style="background:var(--ink);color:rgba(255,255,255,.7);padding:48px 0 24px;">
+<footer>
   <div class="wrap">
-    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:32px;margin-bottom:32px;">
-      <div>
-        <img src="../images/BSCS_Logo_white.webp" alt="Ballarat Commercial Service Centre" style="max-height:36px;margin-bottom:14px;opacity:.9;">
-        <p style="font-size:.9rem;color:rgba(255,255,255,.5);">Wendouree's dedicated heavy vehicle workshop.</p>
+    <div class="ft-grid">
+      <div class="ft-brand">
+        <img src="../images/BSCS_Logo_white.webp" alt="Ballarat Commercial Service Centre" style="height:38px;width:auto;margin-bottom:14px">
+        <p>Heavy vehicle servicing, repairs and inspections for Ballarat fleets for over 20 years.</p>
       </div>
-      <div>
-        <h4 style="font-family:var(--display);font-size:1rem;font-weight:700;color:#fff;margin-bottom:12px;text-transform:uppercase;">Contact</h4>
-        <!-- WC swaps display number; real number stays in href -->
-        <a href="tel:+61353224674" style="color:rgba(255,255,255,.7);display:block;margin-bottom:6px;font-size:.93rem;">03 XXXX XXXX <!-- CONFIRM PHONE --></a>
-        <p style="font-size:.9rem;margin-bottom:4px;"><!-- CONFIRM ADDRESS --></p>
-        <p style="font-size:.9rem;">Wendouree VIC 3355</p>
-        <p style="font-size:.88rem;margin-top:8px;color:rgba(255,255,255,.45);">ABN: <!-- CONFIRM ABN --></p>
-      </div>
-      <div>
-        <h4 style="font-family:var(--display);font-size:1rem;font-weight:700;color:#fff;margin-bottom:12px;text-transform:uppercase;">Legal</h4>
-        <!-- CONFIRM PRIVACY POLICY URL -->
-        <a href="#" style="color:rgba(255,255,255,.7);display:block;font-size:.93rem;margin-bottom:8px;">Privacy Policy <!-- CONFIRM PRIVACY POLICY URL --></a>
-      </div>
+      <div><h4>Services</h4><ul>
+        <li><a href="../truck-repair-servicing-ballarat/">Truck Servicing</a></li>
+        <li><a href="../truck-rwc/">Truck Roadworthy</a></li>
+        <li><a href="../truck-inspections/">Truck Inspections</a></li>
+        <li><a href="../bus-mechanical/">Bus Mechanical</a></li>
+        <li><a href="../bus-rwc/">Bus Roadworthy</a></li>
+        <li><a href="../bus-safety-inspections/">Bus Safety Inspections</a></li>
+        <li><a href="../heavy-vehicle-service-ballarat/">Heavy Vehicle Service</a></li>
+        <li><a href="../heavy-vehicle-service-repair/">Heavy Vehicle Repairs</a></li>
+      </ul></div>
+      <div><h4>Contact</h4><ul>
+        <li><a href="tel:+61353224674">03 5322 4674</a></li>
+        <li>354 Dowling St, Wendouree VIC 3355</li>
+        <li>Mon–Fri: 7:30am – 5:30pm</li>
+      </ul></div>
+      <div><h4>Legal</h4><ul>
+        <li><a href="../privacy-policy/">Privacy Policy</a></li>
+        <li><a href="../terms-of-service/">Terms of Service</a></li>
+      </ul></div>
     </div>
-    <div style="border-top:1px solid rgba(255,255,255,.1);padding-top:18px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;">
-      <p style="font-size:.82rem;color:rgba(255,255,255,.35);">&copy; 2026 Ballarat Commercial Service Centre. All rights reserved.</p>
-      <p style="font-size:.82rem;"><a href="https://mechanicmarketing.com.au" style="color:rgba(255,255,255,.25);">Powered by Mechanic Marketing</a></p>
-    </div>
+    <div class="ft-bottom"><span>© 2026 Ballarat Commercial Service Centre</span><span>20+ years serving Ballarat fleets</span></div>
   </div>
 </footer>
 
 <script>
-/* Hide mobile CTA bar when hero form is in view */
 (function(){
   var bar = document.getElementById('lpMobileCta');
   var form = document.getElementById('quote');
   if (!bar || !form) return;
-  var obs = new IntersectionObserver(function(entries){
-    entries.forEach(function(e){ bar.style.display = e.isIntersecting ? 'none' : 'block'; });
+  var obs = new IntersectionObserver(function(e){
+    e.forEach(function(x){ bar.style.display = x.isIntersecting ? 'none' : 'block'; });
   }, { threshold: 0.1 });
   obs.observe(form);
 })();
